@@ -1,0 +1,20 @@
+[
+  {
+    "name": "Arabica",
+    "origin": "Ethiopia",
+    "altitude": "1200-2200m",
+    "flavor": "Sweet, soft, fruity"
+  },
+  {
+    "name": "Robusta",
+    "origin": "Congo, Uganda",
+    "altitude": "200-800m",
+    "flavor": "Strong, harsh, nutty"
+  },
+  {
+    "name": "Liberica",
+    "origin": "Philippines",
+    "altitude": "400-600m",
+    "flavor": "Smoky, floral, woody"
+  }
+]
