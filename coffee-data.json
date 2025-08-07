@@ -1,23 +1,3502 @@
-const coffeeVarieties = [
+[
   {
-    name: "Arabica",
-    origin: "Ethiopia",
-    altitude: "1,300–1,500 m",
-    flavor: "Sweet, soft, with hints of chocolate and sugar",
-    image: "images/arabica.jpg"
+    "name": "Coffee Variety 1",
+    "origin": "Brazil",
+    "altitude": "1200\u20131600m",
+    "flavor": "Sweet with caramel notes",
+    "image": "images/arabica.jpg"
   },
   {
-    name: "Robusta",
-    origin: "Central Africa",
-    altitude: "200–800 m",
-    flavor: "Strong, harsh, with grainy or nutty notes",
-    image: "images/robusta.jpg"
+    "name": "Coffee Variety 2",
+    "origin": "Yemen",
+    "altitude": "1600\u20132000m",
+    "flavor": "Chocolatey and nutty",
+    "image": "images/arabica.jpg"
   },
   {
-    name: "Liberica",
-    origin: "Philippines",
-    altitude: "300–1,200 m",
-    flavor: "Woody, smoky, with floral/fruity notes",
-    image: "images/liberica.jpg"
+    "name": "Coffee Variety 3",
+    "origin": "Yemen",
+    "altitude": "800\u20131200m",
+    "flavor": "Wine-like acidity",
+    "image": "images/liberica.jpg"
+  },
+  {
+    "name": "Coffee Variety 4",
+    "origin": "Vietnam",
+    "altitude": "2000\u20132400m",
+    "flavor": "Wine-like acidity",
+    "image": "images/robusta.jpg"
+  },
+  {
+    "name": "Coffee Variety 5",
+    "origin": "Kenya",
+    "altitude": "2000\u20132400m",
+    "flavor": "Sweet with caramel notes",
+    "image": "images/arabica.jpg"
+  },
+  {
+    "name": "Coffee Variety 6",
+    "origin": "Vietnam",
+    "altitude": "2000\u20132400m",
+    "flavor": "Earthy and bold",
+    "image": "images/arabica.jpg"
+  },
+  {
+    "name": "Coffee Variety 7",
+    "origin": "India",
+    "altitude": "1200\u20131600m",
+    "flavor": "Fruity and floral",
+    "image": "images/arabica.jpg"
+  },
+  {
+    "name": "Coffee Variety 8",
+    "origin": "Vietnam",
+    "altitude": "1200\u20131600m",
+    "flavor": "Sweet with caramel notes",
+    "image": "images/excelsa.jpg"
+  },
+  {
+    "name": "Coffee Variety 9",
+    "origin": "Colombia",
+    "altitude": "800\u20131200m",
+    "flavor": "Bright and citrusy",
+    "image": "images/liberica.jpg"
+  },
+  {
+    "name": "Coffee Variety 10",
+    "origin": "Yemen",
+    "altitude": "2000\u20132400m",
+    "flavor": "Sweet with caramel notes",
+    "image": "images/excelsa.jpg"
+  },
+  {
+    "name": "Coffee Variety 11",
+    "origin": "Costa Rica",
+    "altitude": "800\u20131200m",
+    "flavor": "Fruity and floral",
+    "image": "images/robusta.jpg"
+  },
+  {
+    "name": "Coffee Variety 12",
+    "origin": "India",
+    "altitude": "1600\u20132000m",
+    "flavor": "Chocolatey and nutty",
+    "image": "images/liberica.jpg"
+  },
+  {
+    "name": "Coffee Variety 13",
+    "origin": "Brazil",
+    "altitude": "1600\u20132000m",
+    "flavor": "Fruity and floral",
+    "image": "images/excelsa.jpg"
+  },
+  {
+    "name": "Coffee Variety 14",
+    "origin": "Vietnam",
+    "altitude": "1600\u20132000m",
+    "flavor": "Earthy and bold",
+    "image": "images/liberica.jpg"
+  },
+  {
+    "name": "Coffee Variety 15",
+    "origin": "Costa Rica",
+    "altitude": "800\u20131200m",
+    "flavor": "Earthy and bold",
+    "image": "images/arabica.jpg"
+  },
+  {
+    "name": "Coffee Variety 16",
+    "origin": "Brazil",
+    "altitude": "800\u20131200m",
+    "flavor": "Earthy and bold",
+    "image": "images/liberica.jpg"
+  },
+  {
+    "name": "Coffee Variety 17",
+    "origin": "Ethiopia",
+    "altitude": "800\u20131200m",
+    "flavor": "Sweet with caramel notes",
+    "image": "images/robusta.jpg"
+  },
+  {
+    "name": "Coffee Variety 18",
+    "origin": "Brazil",
+    "altitude": "800\u20131200m",
+    "flavor": "Bright and citrusy",
+    "image": "images/robusta.jpg"
+  },
+  {
+    "name": "Coffee Variety 19",
+    "origin": "Brazil",
+    "altitude": "800\u20131200m",
+    "flavor": "Sweet with caramel notes",
+    "image": "images/arabica.jpg"
+  },
+  {
+    "name": "Coffee Variety 20",
+    "origin": "Mexico",
+    "altitude": "1600\u20132000m",
+    "flavor": "Chocolatey and nutty",
+    "image": "images/excelsa.jpg"
+  },
+  {
+    "name": "Coffee Variety 21",
+    "origin": "Guatemala",
+    "altitude": "1600\u20132000m",
+    "flavor": "Bright and citrusy",
+    "image": "images/arabica.jpg"
+  },
+  {
+    "name": "Coffee Variety 22",
+    "origin": "Yemen",
+    "altitude": "2000\u20132400m",
+    "flavor": "Sweet with caramel notes",
+    "image": "images/arabica.jpg"
+  },
+  {
+    "name": "Coffee Variety 23",
+    "origin": "Colombia",
+    "altitude": "1600\u20132000m",
+    "flavor": "Fruity and floral",
+    "image": "images/robusta.jpg"
+  },
+  {
+    "name": "Coffee Variety 24",
+    "origin": "Yemen",
+    "altitude": "2000\u20132400m",
+    "flavor": "Wine-like acidity",
+    "image": "images/excelsa.jpg"
+  },
+  {
+    "name": "Coffee Variety 25",
+    "origin": "Ethiopia",
+    "altitude": "2000\u20132400m",
+    "flavor": "Earthy and bold",
+    "image": "images/robusta.jpg"
+  },
+  {
+    "name": "Coffee Variety 26",
+    "origin": "India",
+    "altitude": "800\u20131200m",
+    "flavor": "Fruity and floral",
+    "image": "images/robusta.jpg"
+  },
+  {
+    "name": "Coffee Variety 27",
+    "origin": "Vietnam",
+    "altitude": "2000\u20132400m",
+    "flavor": "Spicy and rich",
+    "image": "images/arabica.jpg"
+  },
+  {
+    "name": "Coffee Variety 28",
+    "origin": "Mexico",
+    "altitude": "800\u20131200m",
+    "flavor": "Smooth and balanced",
+    "image": "images/arabica.jpg"
+  },
+  {
+    "name": "Coffee Variety 29",
+    "origin": "Brazil",
+    "altitude": "1600\u20132000m",
+    "flavor": "Sweet with caramel notes",
+    "image": "images/robusta.jpg"
+  },
+  {
+    "name": "Coffee Variety 30",
+    "origin": "Colombia",
+    "altitude": "1200\u20131600m",
+    "flavor": "Spicy and rich",
+    "image": "images/excelsa.jpg"
+  },
+  {
+    "name": "Coffee Variety 31",
+    "origin": "Guatemala",
+    "altitude": "2000\u20132400m",
+    "flavor": "Earthy and bold",
+    "image": "images/excelsa.jpg"
+  },
+  {
+    "name": "Coffee Variety 32",
+    "origin": "Yemen",
+    "altitude": "800\u20131200m",
+    "flavor": "Fruity and floral",
+    "image": "images/excelsa.jpg"
+  },
+  {
+    "name": "Coffee Variety 33",
+    "origin": "Kenya",
+    "altitude": "800\u20131200m",
+    "flavor": "Chocolatey and nutty",
+    "image": "images/robusta.jpg"
+  },
+  {
+    "name": "Coffee Variety 34",
+    "origin": "Brazil",
+    "altitude": "800\u20131200m",
+    "flavor": "Smooth and balanced",
+    "image": "images/arabica.jpg"
+  },
+  {
+    "name": "Coffee Variety 35",
+    "origin": "Colombia",
+    "altitude": "1600\u20132000m",
+    "flavor": "Smooth and balanced",
+    "image": "images/excelsa.jpg"
+  },
+  {
+    "name": "Coffee Variety 36",
+    "origin": "Mexico",
+    "altitude": "1600\u20132000m",
+    "flavor": "Chocolatey and nutty",
+    "image": "images/excelsa.jpg"
+  },
+  {
+    "name": "Coffee Variety 37",
+    "origin": "Mexico",
+    "altitude": "1200\u20131600m",
+    "flavor": "Earthy and bold",
+    "image": "images/robusta.jpg"
+  },
+  {
+    "name": "Coffee Variety 38",
+    "origin": "Brazil",
+    "altitude": "800\u20131200m",
+    "flavor": "Chocolatey and nutty",
+    "image": "images/arabica.jpg"
+  },
+  {
+    "name": "Coffee Variety 39",
+    "origin": "Costa Rica",
+    "altitude": "800\u20131200m",
+    "flavor": "Wine-like acidity",
+    "image": "images/liberica.jpg"
+  },
+  {
+    "name": "Coffee Variety 40",
+    "origin": "Kenya",
+    "altitude": "2000\u20132400m",
+    "flavor": "Earthy and bold",
+    "image": "images/liberica.jpg"
+  },
+  {
+    "name": "Coffee Variety 41",
+    "origin": "Mexico",
+    "altitude": "2000\u20132400m",
+    "flavor": "Chocolatey and nutty",
+    "image": "images/arabica.jpg"
+  },
+  {
+    "name": "Coffee Variety 42",
+    "origin": "Colombia",
+    "altitude": "2000\u20132400m",
+    "flavor": "Earthy and bold",
+    "image": "images/excelsa.jpg"
+  },
+  {
+    "name": "Coffee Variety 43",
+    "origin": "Vietnam",
+    "altitude": "1200\u20131600m",
+    "flavor": "Spicy and rich",
+    "image": "images/arabica.jpg"
+  },
+  {
+    "name": "Coffee Variety 44",
+    "origin": "Mexico",
+    "altitude": "2000\u20132400m",
+    "flavor": "Earthy and bold",
+    "image": "images/liberica.jpg"
+  },
+  {
+    "name": "Coffee Variety 45",
+    "origin": "Yemen",
+    "altitude": "1600\u20132000m",
+    "flavor": "Earthy and bold",
+    "image": "images/robusta.jpg"
+  },
+  {
+    "name": "Coffee Variety 46",
+    "origin": "Brazil",
+    "altitude": "1200\u20131600m",
+    "flavor": "Wine-like acidity",
+    "image": "images/arabica.jpg"
+  },
+  {
+    "name": "Coffee Variety 47",
+    "origin": "Kenya",
+    "altitude": "1200\u20131600m",
+    "flavor": "Bright and citrusy",
+    "image": "images/arabica.jpg"
+  },
+  {
+    "name": "Coffee Variety 48",
+    "origin": "India",
+    "altitude": "2000\u20132400m",
+    "flavor": "Bright and citrusy",
+    "image": "images/excelsa.jpg"
+  },
+  {
+    "name": "Coffee Variety 49",
+    "origin": "India",
+    "altitude": "2000\u20132400m",
+    "flavor": "Smooth and balanced",
+    "image": "images/robusta.jpg"
+  },
+  {
+    "name": "Coffee Variety 50",
+    "origin": "Ethiopia",
+    "altitude": "2000\u20132400m",
+    "flavor": "Chocolatey and nutty",
+    "image": "images/liberica.jpg"
+  },
+  {
+    "name": "Coffee Variety 51",
+    "origin": "Brazil",
+    "altitude": "1600\u20132000m",
+    "flavor": "Smooth and balanced",
+    "image": "images/liberica.jpg"
+  },
+  {
+    "name": "Coffee Variety 52",
+    "origin": "India",
+    "altitude": "2000\u20132400m",
+    "flavor": "Earthy and bold",
+    "image": "images/excelsa.jpg"
+  },
+  {
+    "name": "Coffee Variety 53",
+    "origin": "Mexico",
+    "altitude": "1600\u20132000m",
+    "flavor": "Sweet with caramel notes",
+    "image": "images/arabica.jpg"
+  },
+  {
+    "name": "Coffee Variety 54",
+    "origin": "Ethiopia",
+    "altitude": "1600\u20132000m",
+    "flavor": "Earthy and bold",
+    "image": "images/excelsa.jpg"
+  },
+  {
+    "name": "Coffee Variety 55",
+    "origin": "Mexico",
+    "altitude": "1200\u20131600m",
+    "flavor": "Smooth and balanced",
+    "image": "images/robusta.jpg"
+  },
+  {
+    "name": "Coffee Variety 56",
+    "origin": "Ethiopia",
+    "altitude": "1600\u20132000m",
+    "flavor": "Fruity and floral",
+    "image": "images/liberica.jpg"
+  },
+  {
+    "name": "Coffee Variety 57",
+    "origin": "Mexico",
+    "altitude": "1600\u20132000m",
+    "flavor": "Spicy and rich",
+    "image": "images/excelsa.jpg"
+  },
+  {
+    "name": "Coffee Variety 58",
+    "origin": "Brazil",
+    "altitude": "1200\u20131600m",
+    "flavor": "Spicy and rich",
+    "image": "images/excelsa.jpg"
+  },
+  {
+    "name": "Coffee Variety 59",
+    "origin": "Yemen",
+    "altitude": "2000\u20132400m",
+    "flavor": "Bright and citrusy",
+    "image": "images/robusta.jpg"
+  },
+  {
+    "name": "Coffee Variety 60",
+    "origin": "Colombia",
+    "altitude": "1200\u20131600m",
+    "flavor": "Spicy and rich",
+    "image": "images/excelsa.jpg"
+  },
+  {
+    "name": "Coffee Variety 61",
+    "origin": "Ethiopia",
+    "altitude": "800\u20131200m",
+    "flavor": "Chocolatey and nutty",
+    "image": "images/robusta.jpg"
+  },
+  {
+    "name": "Coffee Variety 62",
+    "origin": "Vietnam",
+    "altitude": "2000\u20132400m",
+    "flavor": "Spicy and rich",
+    "image": "images/arabica.jpg"
+  },
+  {
+    "name": "Coffee Variety 63",
+    "origin": "Mexico",
+    "altitude": "1600\u20132000m",
+    "flavor": "Earthy and bold",
+    "image": "images/excelsa.jpg"
+  },
+  {
+    "name": "Coffee Variety 64",
+    "origin": "India",
+    "altitude": "1600\u20132000m",
+    "flavor": "Sweet with caramel notes",
+    "image": "images/arabica.jpg"
+  },
+  {
+    "name": "Coffee Variety 65",
+    "origin": "Colombia",
+    "altitude": "1200\u20131600m",
+    "flavor": "Sweet with caramel notes",
+    "image": "images/liberica.jpg"
+  },
+  {
+    "name": "Coffee Variety 66",
+    "origin": "Yemen",
+    "altitude": "1200\u20131600m",
+    "flavor": "Wine-like acidity",
+    "image": "images/arabica.jpg"
+  },
+  {
+    "name": "Coffee Variety 67",
+    "origin": "Vietnam",
+    "altitude": "800\u20131200m",
+    "flavor": "Chocolatey and nutty",
+    "image": "images/arabica.jpg"
+  },
+  {
+    "name": "Coffee Variety 68",
+    "origin": "Yemen",
+    "altitude": "1600\u20132000m",
+    "flavor": "Smooth and balanced",
+    "image": "images/robusta.jpg"
+  },
+  {
+    "name": "Coffee Variety 69",
+    "origin": "Ethiopia",
+    "altitude": "1600\u20132000m",
+    "flavor": "Wine-like acidity",
+    "image": "images/robusta.jpg"
+  },
+  {
+    "name": "Coffee Variety 70",
+    "origin": "Brazil",
+    "altitude": "2000\u20132400m",
+    "flavor": "Fruity and floral",
+    "image": "images/robusta.jpg"
+  },
+  {
+    "name": "Coffee Variety 71",
+    "origin": "India",
+    "altitude": "1200\u20131600m",
+    "flavor": "Smooth and balanced",
+    "image": "images/excelsa.jpg"
+  },
+  {
+    "name": "Coffee Variety 72",
+    "origin": "India",
+    "altitude": "1200\u20131600m",
+    "flavor": "Sweet with caramel notes",
+    "image": "images/excelsa.jpg"
+  },
+  {
+    "name": "Coffee Variety 73",
+    "origin": "Mexico",
+    "altitude": "800\u20131200m",
+    "flavor": "Wine-like acidity",
+    "image": "images/arabica.jpg"
+  },
+  {
+    "name": "Coffee Variety 74",
+    "origin": "Kenya",
+    "altitude": "2000\u20132400m",
+    "flavor": "Earthy and bold",
+    "image": "images/excelsa.jpg"
+  },
+  {
+    "name": "Coffee Variety 75",
+    "origin": "India",
+    "altitude": "1200\u20131600m",
+    "flavor": "Fruity and floral",
+    "image": "images/excelsa.jpg"
+  },
+  {
+    "name": "Coffee Variety 76",
+    "origin": "Brazil",
+    "altitude": "1200\u20131600m",
+    "flavor": "Bright and citrusy",
+    "image": "images/liberica.jpg"
+  },
+  {
+    "name": "Coffee Variety 77",
+    "origin": "Yemen",
+    "altitude": "800\u20131200m",
+    "flavor": "Smooth and balanced",
+    "image": "images/excelsa.jpg"
+  },
+  {
+    "name": "Coffee Variety 78",
+    "origin": "India",
+    "altitude": "800\u20131200m",
+    "flavor": "Bright and citrusy",
+    "image": "images/excelsa.jpg"
+  },
+  {
+    "name": "Coffee Variety 79",
+    "origin": "Costa Rica",
+    "altitude": "800\u20131200m",
+    "flavor": "Wine-like acidity",
+    "image": "images/excelsa.jpg"
+  },
+  {
+    "name": "Coffee Variety 80",
+    "origin": "Brazil",
+    "altitude": "800\u20131200m",
+    "flavor": "Chocolatey and nutty",
+    "image": "images/robusta.jpg"
+  },
+  {
+    "name": "Coffee Variety 81",
+    "origin": "Ethiopia",
+    "altitude": "800\u20131200m",
+    "flavor": "Bright and citrusy",
+    "image": "images/excelsa.jpg"
+  },
+  {
+    "name": "Coffee Variety 82",
+    "origin": "Kenya",
+    "altitude": "800\u20131200m",
+    "flavor": "Smooth and balanced",
+    "image": "images/liberica.jpg"
+  },
+  {
+    "name": "Coffee Variety 83",
+    "origin": "Kenya",
+    "altitude": "1600\u20132000m",
+    "flavor": "Chocolatey and nutty",
+    "image": "images/liberica.jpg"
+  },
+  {
+    "name": "Coffee Variety 84",
+    "origin": "India",
+    "altitude": "1200\u20131600m",
+    "flavor": "Chocolatey and nutty",
+    "image": "images/liberica.jpg"
+  },
+  {
+    "name": "Coffee Variety 85",
+    "origin": "Costa Rica",
+    "altitude": "2000\u20132400m",
+    "flavor": "Chocolatey and nutty",
+    "image": "images/excelsa.jpg"
+  },
+  {
+    "name": "Coffee Variety 86",
+    "origin": "Guatemala",
+    "altitude": "1200\u20131600m",
+    "flavor": "Earthy and bold",
+    "image": "images/arabica.jpg"
+  },
+  {
+    "name": "Coffee Variety 87",
+    "origin": "Ethiopia",
+    "altitude": "2000\u20132400m",
+    "flavor": "Smooth and balanced",
+    "image": "images/arabica.jpg"
+  },
+  {
+    "name": "Coffee Variety 88",
+    "origin": "Mexico",
+    "altitude": "2000\u20132400m",
+    "flavor": "Fruity and floral",
+    "image": "images/liberica.jpg"
+  },
+  {
+    "name": "Coffee Variety 89",
+    "origin": "Costa Rica",
+    "altitude": "1200\u20131600m",
+    "flavor": "Wine-like acidity",
+    "image": "images/excelsa.jpg"
+  },
+  {
+    "name": "Coffee Variety 90",
+    "origin": "Guatemala",
+    "altitude": "1200\u20131600m",
+    "flavor": "Earthy and bold",
+    "image": "images/robusta.jpg"
+  },
+  {
+    "name": "Coffee Variety 91",
+    "origin": "Vietnam",
+    "altitude": "1200\u20131600m",
+    "flavor": "Sweet with caramel notes",
+    "image": "images/liberica.jpg"
+  },
+  {
+    "name": "Coffee Variety 92",
+    "origin": "Ethiopia",
+    "altitude": "2000\u20132400m",
+    "flavor": "Smooth and balanced",
+    "image": "images/robusta.jpg"
+  },
+  {
+    "name": "Coffee Variety 93",
+    "origin": "India",
+    "altitude": "1600\u20132000m",
+    "flavor": "Fruity and floral",
+    "image": "images/liberica.jpg"
+  },
+  {
+    "name": "Coffee Variety 94",
+    "origin": "Colombia",
+    "altitude": "2000\u20132400m",
+    "flavor": "Bright and citrusy",
+    "image": "images/arabica.jpg"
+  },
+  {
+    "name": "Coffee Variety 95",
+    "origin": "India",
+    "altitude": "2000\u20132400m",
+    "flavor": "Chocolatey and nutty",
+    "image": "images/liberica.jpg"
+  },
+  {
+    "name": "Coffee Variety 96",
+    "origin": "Yemen",
+    "altitude": "800\u20131200m",
+    "flavor": "Spicy and rich",
+    "image": "images/arabica.jpg"
+  },
+  {
+    "name": "Coffee Variety 97",
+    "origin": "Yemen",
+    "altitude": "1200\u20131600m",
+    "flavor": "Chocolatey and nutty",
+    "image": "images/excelsa.jpg"
+  },
+  {
+    "name": "Coffee Variety 98",
+    "origin": "Brazil",
+    "altitude": "1200\u20131600m",
+    "flavor": "Earthy and bold",
+    "image": "images/excelsa.jpg"
+  },
+  {
+    "name": "Coffee Variety 99",
+    "origin": "Vietnam",
+    "altitude": "1600\u20132000m",
+    "flavor": "Smooth and balanced",
+    "image": "images/excelsa.jpg"
+  },
+  {
+    "name": "Coffee Variety 100",
+    "origin": "India",
+    "altitude": "800\u20131200m",
+    "flavor": "Earthy and bold",
+    "image": "images/excelsa.jpg"
+  },
+  {
+    "name": "Coffee Variety 101",
+    "origin": "Vietnam",
+    "altitude": "1600\u20132000m",
+    "flavor": "Sweet with caramel notes",
+    "image": "images/arabica.jpg"
+  },
+  {
+    "name": "Coffee Variety 102",
+    "origin": "Ethiopia",
+    "altitude": "1200\u20131600m",
+    "flavor": "Spicy and rich",
+    "image": "images/arabica.jpg"
+  },
+  {
+    "name": "Coffee Variety 103",
+    "origin": "Brazil",
+    "altitude": "2000\u20132400m",
+    "flavor": "Sweet with caramel notes",
+    "image": "images/robusta.jpg"
+  },
+  {
+    "name": "Coffee Variety 104",
+    "origin": "Colombia",
+    "altitude": "1600\u20132000m",
+    "flavor": "Smooth and balanced",
+    "image": "images/arabica.jpg"
+  },
+  {
+    "name": "Coffee Variety 105",
+    "origin": "Mexico",
+    "altitude": "800\u20131200m",
+    "flavor": "Spicy and rich",
+    "image": "images/excelsa.jpg"
+  },
+  {
+    "name": "Coffee Variety 106",
+    "origin": "Yemen",
+    "altitude": "2000\u20132400m",
+    "flavor": "Spicy and rich",
+    "image": "images/arabica.jpg"
+  },
+  {
+    "name": "Coffee Variety 107",
+    "origin": "Vietnam",
+    "altitude": "2000\u20132400m",
+    "flavor": "Spicy and rich",
+    "image": "images/arabica.jpg"
+  },
+  {
+    "name": "Coffee Variety 108",
+    "origin": "Guatemala",
+    "altitude": "1600\u20132000m",
+    "flavor": "Sweet with caramel notes",
+    "image": "images/excelsa.jpg"
+  },
+  {
+    "name": "Coffee Variety 109",
+    "origin": "Yemen",
+    "altitude": "1200\u20131600m",
+    "flavor": "Sweet with caramel notes",
+    "image": "images/robusta.jpg"
+  },
+  {
+    "name": "Coffee Variety 110",
+    "origin": "Kenya",
+    "altitude": "1600\u20132000m",
+    "flavor": "Earthy and bold",
+    "image": "images/arabica.jpg"
+  },
+  {
+    "name": "Coffee Variety 111",
+    "origin": "Costa Rica",
+    "altitude": "800\u20131200m",
+    "flavor": "Fruity and floral",
+    "image": "images/liberica.jpg"
+  },
+  {
+    "name": "Coffee Variety 112",
+    "origin": "Costa Rica",
+    "altitude": "1600\u20132000m",
+    "flavor": "Chocolatey and nutty",
+    "image": "images/excelsa.jpg"
+  },
+  {
+    "name": "Coffee Variety 113",
+    "origin": "Kenya",
+    "altitude": "800\u20131200m",
+    "flavor": "Smooth and balanced",
+    "image": "images/liberica.jpg"
+  },
+  {
+    "name": "Coffee Variety 114",
+    "origin": "Brazil",
+    "altitude": "2000\u20132400m",
+    "flavor": "Earthy and bold",
+    "image": "images/excelsa.jpg"
+  },
+  {
+    "name": "Coffee Variety 115",
+    "origin": "Colombia",
+    "altitude": "2000\u20132400m",
+    "flavor": "Spicy and rich",
+    "image": "images/excelsa.jpg"
+  },
+  {
+    "name": "Coffee Variety 116",
+    "origin": "Costa Rica",
+    "altitude": "800\u20131200m",
+    "flavor": "Bright and citrusy",
+    "image": "images/robusta.jpg"
+  },
+  {
+    "name": "Coffee Variety 117",
+    "origin": "Yemen",
+    "altitude": "800\u20131200m",
+    "flavor": "Sweet with caramel notes",
+    "image": "images/excelsa.jpg"
+  },
+  {
+    "name": "Coffee Variety 118",
+    "origin": "Vietnam",
+    "altitude": "2000\u20132400m",
+    "flavor": "Spicy and rich",
+    "image": "images/excelsa.jpg"
+  },
+  {
+    "name": "Coffee Variety 119",
+    "origin": "Colombia",
+    "altitude": "800\u20131200m",
+    "flavor": "Bright and citrusy",
+    "image": "images/arabica.jpg"
+  },
+  {
+    "name": "Coffee Variety 120",
+    "origin": "Colombia",
+    "altitude": "2000\u20132400m",
+    "flavor": "Smooth and balanced",
+    "image": "images/robusta.jpg"
+  },
+  {
+    "name": "Coffee Variety 121",
+    "origin": "Yemen",
+    "altitude": "800\u20131200m",
+    "flavor": "Sweet with caramel notes",
+    "image": "images/liberica.jpg"
+  },
+  {
+    "name": "Coffee Variety 122",
+    "origin": "Guatemala",
+    "altitude": "1600\u20132000m",
+    "flavor": "Bright and citrusy",
+    "image": "images/robusta.jpg"
+  },
+  {
+    "name": "Coffee Variety 123",
+    "origin": "India",
+    "altitude": "1200\u20131600m",
+    "flavor": "Spicy and rich",
+    "image": "images/robusta.jpg"
+  },
+  {
+    "name": "Coffee Variety 124",
+    "origin": "Kenya",
+    "altitude": "1200\u20131600m",
+    "flavor": "Spicy and rich",
+    "image": "images/robusta.jpg"
+  },
+  {
+    "name": "Coffee Variety 125",
+    "origin": "Vietnam",
+    "altitude": "800\u20131200m",
+    "flavor": "Wine-like acidity",
+    "image": "images/arabica.jpg"
+  },
+  {
+    "name": "Coffee Variety 126",
+    "origin": "India",
+    "altitude": "800\u20131200m",
+    "flavor": "Smooth and balanced",
+    "image": "images/excelsa.jpg"
+  },
+  {
+    "name": "Coffee Variety 127",
+    "origin": "India",
+    "altitude": "2000\u20132400m",
+    "flavor": "Fruity and floral",
+    "image": "images/liberica.jpg"
+  },
+  {
+    "name": "Coffee Variety 128",
+    "origin": "Guatemala",
+    "altitude": "1200\u20131600m",
+    "flavor": "Sweet with caramel notes",
+    "image": "images/liberica.jpg"
+  },
+  {
+    "name": "Coffee Variety 129",
+    "origin": "Brazil",
+    "altitude": "800\u20131200m",
+    "flavor": "Fruity and floral",
+    "image": "images/liberica.jpg"
+  },
+  {
+    "name": "Coffee Variety 130",
+    "origin": "Guatemala",
+    "altitude": "1600\u20132000m",
+    "flavor": "Wine-like acidity",
+    "image": "images/excelsa.jpg"
+  },
+  {
+    "name": "Coffee Variety 131",
+    "origin": "Yemen",
+    "altitude": "1600\u20132000m",
+    "flavor": "Chocolatey and nutty",
+    "image": "images/robusta.jpg"
+  },
+  {
+    "name": "Coffee Variety 132",
+    "origin": "Vietnam",
+    "altitude": "800\u20131200m",
+    "flavor": "Earthy and bold",
+    "image": "images/arabica.jpg"
+  },
+  {
+    "name": "Coffee Variety 133",
+    "origin": "Vietnam",
+    "altitude": "800\u20131200m",
+    "flavor": "Smooth and balanced",
+    "image": "images/liberica.jpg"
+  },
+  {
+    "name": "Coffee Variety 134",
+    "origin": "Mexico",
+    "altitude": "2000\u20132400m",
+    "flavor": "Chocolatey and nutty",
+    "image": "images/robusta.jpg"
+  },
+  {
+    "name": "Coffee Variety 135",
+    "origin": "Colombia",
+    "altitude": "1600\u20132000m",
+    "flavor": "Fruity and floral",
+    "image": "images/arabica.jpg"
+  },
+  {
+    "name": "Coffee Variety 136",
+    "origin": "Costa Rica",
+    "altitude": "800\u20131200m",
+    "flavor": "Sweet with caramel notes",
+    "image": "images/arabica.jpg"
+  },
+  {
+    "name": "Coffee Variety 137",
+    "origin": "Costa Rica",
+    "altitude": "1200\u20131600m",
+    "flavor": "Sweet with caramel notes",
+    "image": "images/robusta.jpg"
+  },
+  {
+    "name": "Coffee Variety 138",
+    "origin": "Vietnam",
+    "altitude": "1600\u20132000m",
+    "flavor": "Smooth and balanced",
+    "image": "images/liberica.jpg"
+  },
+  {
+    "name": "Coffee Variety 139",
+    "origin": "Guatemala",
+    "altitude": "1600\u20132000m",
+    "flavor": "Bright and citrusy",
+    "image": "images/robusta.jpg"
+  },
+  {
+    "name": "Coffee Variety 140",
+    "origin": "Mexico",
+    "altitude": "800\u20131200m",
+    "flavor": "Fruity and floral",
+    "image": "images/liberica.jpg"
+  },
+  {
+    "name": "Coffee Variety 141",
+    "origin": "Brazil",
+    "altitude": "800\u20131200m",
+    "flavor": "Chocolatey and nutty",
+    "image": "images/arabica.jpg"
+  },
+  {
+    "name": "Coffee Variety 142",
+    "origin": "Guatemala",
+    "altitude": "800\u20131200m",
+    "flavor": "Smooth and balanced",
+    "image": "images/liberica.jpg"
+  },
+  {
+    "name": "Coffee Variety 143",
+    "origin": "Mexico",
+    "altitude": "1600\u20132000m",
+    "flavor": "Spicy and rich",
+    "image": "images/robusta.jpg"
+  },
+  {
+    "name": "Coffee Variety 144",
+    "origin": "Yemen",
+    "altitude": "1200\u20131600m",
+    "flavor": "Smooth and balanced",
+    "image": "images/arabica.jpg"
+  },
+  {
+    "name": "Coffee Variety 145",
+    "origin": "Costa Rica",
+    "altitude": "1200\u20131600m",
+    "flavor": "Chocolatey and nutty",
+    "image": "images/robusta.jpg"
+  },
+  {
+    "name": "Coffee Variety 146",
+    "origin": "Yemen",
+    "altitude": "2000\u20132400m",
+    "flavor": "Sweet with caramel notes",
+    "image": "images/excelsa.jpg"
+  },
+  {
+    "name": "Coffee Variety 147",
+    "origin": "Costa Rica",
+    "altitude": "1200\u20131600m",
+    "flavor": "Earthy and bold",
+    "image": "images/excelsa.jpg"
+  },
+  {
+    "name": "Coffee Variety 148",
+    "origin": "India",
+    "altitude": "2000\u20132400m",
+    "flavor": "Sweet with caramel notes",
+    "image": "images/arabica.jpg"
+  },
+  {
+    "name": "Coffee Variety 149",
+    "origin": "Ethiopia",
+    "altitude": "800\u20131200m",
+    "flavor": "Earthy and bold",
+    "image": "images/excelsa.jpg"
+  },
+  {
+    "name": "Coffee Variety 150",
+    "origin": "Ethiopia",
+    "altitude": "2000\u20132400m",
+    "flavor": "Bright and citrusy",
+    "image": "images/liberica.jpg"
+  },
+  {
+    "name": "Coffee Variety 151",
+    "origin": "Yemen",
+    "altitude": "800\u20131200m",
+    "flavor": "Fruity and floral",
+    "image": "images/arabica.jpg"
+  },
+  {
+    "name": "Coffee Variety 152",
+    "origin": "India",
+    "altitude": "1600\u20132000m",
+    "flavor": "Earthy and bold",
+    "image": "images/liberica.jpg"
+  },
+  {
+    "name": "Coffee Variety 153",
+    "origin": "Colombia",
+    "altitude": "1200\u20131600m",
+    "flavor": "Chocolatey and nutty",
+    "image": "images/robusta.jpg"
+  },
+  {
+    "name": "Coffee Variety 154",
+    "origin": "Yemen",
+    "altitude": "2000\u20132400m",
+    "flavor": "Wine-like acidity",
+    "image": "images/robusta.jpg"
+  },
+  {
+    "name": "Coffee Variety 155",
+    "origin": "Colombia",
+    "altitude": "2000\u20132400m",
+    "flavor": "Bright and citrusy",
+    "image": "images/arabica.jpg"
+  },
+  {
+    "name": "Coffee Variety 156",
+    "origin": "Brazil",
+    "altitude": "2000\u20132400m",
+    "flavor": "Chocolatey and nutty",
+    "image": "images/excelsa.jpg"
+  },
+  {
+    "name": "Coffee Variety 157",
+    "origin": "Mexico",
+    "altitude": "1200\u20131600m",
+    "flavor": "Spicy and rich",
+    "image": "images/robusta.jpg"
+  },
+  {
+    "name": "Coffee Variety 158",
+    "origin": "Brazil",
+    "altitude": "800\u20131200m",
+    "flavor": "Smooth and balanced",
+    "image": "images/liberica.jpg"
+  },
+  {
+    "name": "Coffee Variety 159",
+    "origin": "India",
+    "altitude": "1600\u20132000m",
+    "flavor": "Fruity and floral",
+    "image": "images/robusta.jpg"
+  },
+  {
+    "name": "Coffee Variety 160",
+    "origin": "Mexico",
+    "altitude": "800\u20131200m",
+    "flavor": "Sweet with caramel notes",
+    "image": "images/excelsa.jpg"
+  },
+  {
+    "name": "Coffee Variety 161",
+    "origin": "Ethiopia",
+    "altitude": "1600\u20132000m",
+    "flavor": "Spicy and rich",
+    "image": "images/robusta.jpg"
+  },
+  {
+    "name": "Coffee Variety 162",
+    "origin": "Vietnam",
+    "altitude": "800\u20131200m",
+    "flavor": "Spicy and rich",
+    "image": "images/robusta.jpg"
+  },
+  {
+    "name": "Coffee Variety 163",
+    "origin": "Yemen",
+    "altitude": "1600\u20132000m",
+    "flavor": "Earthy and bold",
+    "image": "images/robusta.jpg"
+  },
+  {
+    "name": "Coffee Variety 164",
+    "origin": "Colombia",
+    "altitude": "1600\u20132000m",
+    "flavor": "Earthy and bold",
+    "image": "images/arabica.jpg"
+  },
+  {
+    "name": "Coffee Variety 165",
+    "origin": "Kenya",
+    "altitude": "1600\u20132000m",
+    "flavor": "Bright and citrusy",
+    "image": "images/robusta.jpg"
+  },
+  {
+    "name": "Coffee Variety 166",
+    "origin": "Guatemala",
+    "altitude": "800\u20131200m",
+    "flavor": "Chocolatey and nutty",
+    "image": "images/liberica.jpg"
+  },
+  {
+    "name": "Coffee Variety 167",
+    "origin": "Colombia",
+    "altitude": "1600\u20132000m",
+    "flavor": "Wine-like acidity",
+    "image": "images/arabica.jpg"
+  },
+  {
+    "name": "Coffee Variety 168",
+    "origin": "India",
+    "altitude": "1600\u20132000m",
+    "flavor": "Earthy and bold",
+    "image": "images/excelsa.jpg"
+  },
+  {
+    "name": "Coffee Variety 169",
+    "origin": "Ethiopia",
+    "altitude": "1200\u20131600m",
+    "flavor": "Smooth and balanced",
+    "image": "images/robusta.jpg"
+  },
+  {
+    "name": "Coffee Variety 170",
+    "origin": "Ethiopia",
+    "altitude": "1600\u20132000m",
+    "flavor": "Smooth and balanced",
+    "image": "images/liberica.jpg"
+  },
+  {
+    "name": "Coffee Variety 171",
+    "origin": "Kenya",
+    "altitude": "2000\u20132400m",
+    "flavor": "Chocolatey and nutty",
+    "image": "images/liberica.jpg"
+  },
+  {
+    "name": "Coffee Variety 172",
+    "origin": "Vietnam",
+    "altitude": "1600\u20132000m",
+    "flavor": "Spicy and rich",
+    "image": "images/liberica.jpg"
+  },
+  {
+    "name": "Coffee Variety 173",
+    "origin": "Colombia",
+    "altitude": "800\u20131200m",
+    "flavor": "Fruity and floral",
+    "image": "images/liberica.jpg"
+  },
+  {
+    "name": "Coffee Variety 174",
+    "origin": "Ethiopia",
+    "altitude": "1200\u20131600m",
+    "flavor": "Smooth and balanced",
+    "image": "images/liberica.jpg"
+  },
+  {
+    "name": "Coffee Variety 175",
+    "origin": "India",
+    "altitude": "2000\u20132400m",
+    "flavor": "Earthy and bold",
+    "image": "images/liberica.jpg"
+  },
+  {
+    "name": "Coffee Variety 176",
+    "origin": "Costa Rica",
+    "altitude": "1200\u20131600m",
+    "flavor": "Sweet with caramel notes",
+    "image": "images/arabica.jpg"
+  },
+  {
+    "name": "Coffee Variety 177",
+    "origin": "Brazil",
+    "altitude": "1600\u20132000m",
+    "flavor": "Bright and citrusy",
+    "image": "images/excelsa.jpg"
+  },
+  {
+    "name": "Coffee Variety 178",
+    "origin": "Ethiopia",
+    "altitude": "800\u20131200m",
+    "flavor": "Spicy and rich",
+    "image": "images/liberica.jpg"
+  },
+  {
+    "name": "Coffee Variety 179",
+    "origin": "Kenya",
+    "altitude": "2000\u20132400m",
+    "flavor": "Fruity and floral",
+    "image": "images/liberica.jpg"
+  },
+  {
+    "name": "Coffee Variety 180",
+    "origin": "India",
+    "altitude": "800\u20131200m",
+    "flavor": "Chocolatey and nutty",
+    "image": "images/robusta.jpg"
+  },
+  {
+    "name": "Coffee Variety 181",
+    "origin": "Colombia",
+    "altitude": "800\u20131200m",
+    "flavor": "Wine-like acidity",
+    "image": "images/arabica.jpg"
+  },
+  {
+    "name": "Coffee Variety 182",
+    "origin": "Brazil",
+    "altitude": "1600\u20132000m",
+    "flavor": "Wine-like acidity",
+    "image": "images/excelsa.jpg"
+  },
+  {
+    "name": "Coffee Variety 183",
+    "origin": "Guatemala",
+    "altitude": "800\u20131200m",
+    "flavor": "Chocolatey and nutty",
+    "image": "images/liberica.jpg"
+  },
+  {
+    "name": "Coffee Variety 184",
+    "origin": "Vietnam",
+    "altitude": "800\u20131200m",
+    "flavor": "Earthy and bold",
+    "image": "images/robusta.jpg"
+  },
+  {
+    "name": "Coffee Variety 185",
+    "origin": "India",
+    "altitude": "1600\u20132000m",
+    "flavor": "Sweet with caramel notes",
+    "image": "images/arabica.jpg"
+  },
+  {
+    "name": "Coffee Variety 186",
+    "origin": "Ethiopia",
+    "altitude": "800\u20131200m",
+    "flavor": "Spicy and rich",
+    "image": "images/arabica.jpg"
+  },
+  {
+    "name": "Coffee Variety 187",
+    "origin": "Vietnam",
+    "altitude": "1200\u20131600m",
+    "flavor": "Chocolatey and nutty",
+    "image": "images/robusta.jpg"
+  },
+  {
+    "name": "Coffee Variety 188",
+    "origin": "Colombia",
+    "altitude": "2000\u20132400m",
+    "flavor": "Smooth and balanced",
+    "image": "images/excelsa.jpg"
+  },
+  {
+    "name": "Coffee Variety 189",
+    "origin": "Mexico",
+    "altitude": "2000\u20132400m",
+    "flavor": "Wine-like acidity",
+    "image": "images/robusta.jpg"
+  },
+  {
+    "name": "Coffee Variety 190",
+    "origin": "Mexico",
+    "altitude": "1600\u20132000m",
+    "flavor": "Chocolatey and nutty",
+    "image": "images/robusta.jpg"
+  },
+  {
+    "name": "Coffee Variety 191",
+    "origin": "Guatemala",
+    "altitude": "800\u20131200m",
+    "flavor": "Wine-like acidity",
+    "image": "images/arabica.jpg"
+  },
+  {
+    "name": "Coffee Variety 192",
+    "origin": "Costa Rica",
+    "altitude": "1600\u20132000m",
+    "flavor": "Fruity and floral",
+    "image": "images/robusta.jpg"
+  },
+  {
+    "name": "Coffee Variety 193",
+    "origin": "Mexico",
+    "altitude": "2000\u20132400m",
+    "flavor": "Fruity and floral",
+    "image": "images/excelsa.jpg"
+  },
+  {
+    "name": "Coffee Variety 194",
+    "origin": "India",
+    "altitude": "1600\u20132000m",
+    "flavor": "Smooth and balanced",
+    "image": "images/liberica.jpg"
+  },
+  {
+    "name": "Coffee Variety 195",
+    "origin": "Vietnam",
+    "altitude": "1600\u20132000m",
+    "flavor": "Wine-like acidity",
+    "image": "images/liberica.jpg"
+  },
+  {
+    "name": "Coffee Variety 196",
+    "origin": "Brazil",
+    "altitude": "1200\u20131600m",
+    "flavor": "Spicy and rich",
+    "image": "images/liberica.jpg"
+  },
+  {
+    "name": "Coffee Variety 197",
+    "origin": "Mexico",
+    "altitude": "1600\u20132000m",
+    "flavor": "Fruity and floral",
+    "image": "images/robusta.jpg"
+  },
+  {
+    "name": "Coffee Variety 198",
+    "origin": "Ethiopia",
+    "altitude": "800\u20131200m",
+    "flavor": "Smooth and balanced",
+    "image": "images/liberica.jpg"
+  },
+  {
+    "name": "Coffee Variety 199",
+    "origin": "Colombia",
+    "altitude": "1200\u20131600m",
+    "flavor": "Sweet with caramel notes",
+    "image": "images/robusta.jpg"
+  },
+  {
+    "name": "Coffee Variety 200",
+    "origin": "Ethiopia",
+    "altitude": "800\u20131200m",
+    "flavor": "Spicy and rich",
+    "image": "images/liberica.jpg"
+  },
+  {
+    "name": "Coffee Variety 201",
+    "origin": "Colombia",
+    "altitude": "2000\u20132400m",
+    "flavor": "Fruity and floral",
+    "image": "images/arabica.jpg"
+  },
+  {
+    "name": "Coffee Variety 202",
+    "origin": "India",
+    "altitude": "1200\u20131600m",
+    "flavor": "Wine-like acidity",
+    "image": "images/excelsa.jpg"
+  },
+  {
+    "name": "Coffee Variety 203",
+    "origin": "Brazil",
+    "altitude": "1200\u20131600m",
+    "flavor": "Bright and citrusy",
+    "image": "images/liberica.jpg"
+  },
+  {
+    "name": "Coffee Variety 204",
+    "origin": "Ethiopia",
+    "altitude": "2000\u20132400m",
+    "flavor": "Smooth and balanced",
+    "image": "images/excelsa.jpg"
+  },
+  {
+    "name": "Coffee Variety 205",
+    "origin": "Guatemala",
+    "altitude": "800\u20131200m",
+    "flavor": "Smooth and balanced",
+    "image": "images/excelsa.jpg"
+  },
+  {
+    "name": "Coffee Variety 206",
+    "origin": "Costa Rica",
+    "altitude": "1200\u20131600m",
+    "flavor": "Chocolatey and nutty",
+    "image": "images/excelsa.jpg"
+  },
+  {
+    "name": "Coffee Variety 207",
+    "origin": "Mexico",
+    "altitude": "1600\u20132000m",
+    "flavor": "Earthy and bold",
+    "image": "images/excelsa.jpg"
+  },
+  {
+    "name": "Coffee Variety 208",
+    "origin": "India",
+    "altitude": "800\u20131200m",
+    "flavor": "Fruity and floral",
+    "image": "images/robusta.jpg"
+  },
+  {
+    "name": "Coffee Variety 209",
+    "origin": "Brazil",
+    "altitude": "2000\u20132400m",
+    "flavor": "Chocolatey and nutty",
+    "image": "images/excelsa.jpg"
+  },
+  {
+    "name": "Coffee Variety 210",
+    "origin": "Brazil",
+    "altitude": "800\u20131200m",
+    "flavor": "Chocolatey and nutty",
+    "image": "images/liberica.jpg"
+  },
+  {
+    "name": "Coffee Variety 211",
+    "origin": "Vietnam",
+    "altitude": "2000\u20132400m",
+    "flavor": "Spicy and rich",
+    "image": "images/excelsa.jpg"
+  },
+  {
+    "name": "Coffee Variety 212",
+    "origin": "Mexico",
+    "altitude": "2000\u20132400m",
+    "flavor": "Wine-like acidity",
+    "image": "images/liberica.jpg"
+  },
+  {
+    "name": "Coffee Variety 213",
+    "origin": "Mexico",
+    "altitude": "2000\u20132400m",
+    "flavor": "Sweet with caramel notes",
+    "image": "images/liberica.jpg"
+  },
+  {
+    "name": "Coffee Variety 214",
+    "origin": "Yemen",
+    "altitude": "800\u20131200m",
+    "flavor": "Chocolatey and nutty",
+    "image": "images/liberica.jpg"
+  },
+  {
+    "name": "Coffee Variety 215",
+    "origin": "Kenya",
+    "altitude": "1200\u20131600m",
+    "flavor": "Chocolatey and nutty",
+    "image": "images/excelsa.jpg"
+  },
+  {
+    "name": "Coffee Variety 216",
+    "origin": "Mexico",
+    "altitude": "2000\u20132400m",
+    "flavor": "Spicy and rich",
+    "image": "images/robusta.jpg"
+  },
+  {
+    "name": "Coffee Variety 217",
+    "origin": "Mexico",
+    "altitude": "2000\u20132400m",
+    "flavor": "Earthy and bold",
+    "image": "images/liberica.jpg"
+  },
+  {
+    "name": "Coffee Variety 218",
+    "origin": "Costa Rica",
+    "altitude": "800\u20131200m",
+    "flavor": "Chocolatey and nutty",
+    "image": "images/arabica.jpg"
+  },
+  {
+    "name": "Coffee Variety 219",
+    "origin": "Brazil",
+    "altitude": "1200\u20131600m",
+    "flavor": "Earthy and bold",
+    "image": "images/liberica.jpg"
+  },
+  {
+    "name": "Coffee Variety 220",
+    "origin": "Ethiopia",
+    "altitude": "800\u20131200m",
+    "flavor": "Bright and citrusy",
+    "image": "images/arabica.jpg"
+  },
+  {
+    "name": "Coffee Variety 221",
+    "origin": "Mexico",
+    "altitude": "800\u20131200m",
+    "flavor": "Fruity and floral",
+    "image": "images/excelsa.jpg"
+  },
+  {
+    "name": "Coffee Variety 222",
+    "origin": "Kenya",
+    "altitude": "2000\u20132400m",
+    "flavor": "Bright and citrusy",
+    "image": "images/excelsa.jpg"
+  },
+  {
+    "name": "Coffee Variety 223",
+    "origin": "Brazil",
+    "altitude": "1200\u20131600m",
+    "flavor": "Sweet with caramel notes",
+    "image": "images/robusta.jpg"
+  },
+  {
+    "name": "Coffee Variety 224",
+    "origin": "India",
+    "altitude": "2000\u20132400m",
+    "flavor": "Bright and citrusy",
+    "image": "images/excelsa.jpg"
+  },
+  {
+    "name": "Coffee Variety 225",
+    "origin": "Ethiopia",
+    "altitude": "800\u20131200m",
+    "flavor": "Wine-like acidity",
+    "image": "images/arabica.jpg"
+  },
+  {
+    "name": "Coffee Variety 226",
+    "origin": "Vietnam",
+    "altitude": "800\u20131200m",
+    "flavor": "Bright and citrusy",
+    "image": "images/arabica.jpg"
+  },
+  {
+    "name": "Coffee Variety 227",
+    "origin": "Vietnam",
+    "altitude": "1600\u20132000m",
+    "flavor": "Fruity and floral",
+    "image": "images/liberica.jpg"
+  },
+  {
+    "name": "Coffee Variety 228",
+    "origin": "Kenya",
+    "altitude": "1600\u20132000m",
+    "flavor": "Fruity and floral",
+    "image": "images/excelsa.jpg"
+  },
+  {
+    "name": "Coffee Variety 229",
+    "origin": "Vietnam",
+    "altitude": "1200\u20131600m",
+    "flavor": "Chocolatey and nutty",
+    "image": "images/arabica.jpg"
+  },
+  {
+    "name": "Coffee Variety 230",
+    "origin": "Guatemala",
+    "altitude": "1200\u20131600m",
+    "flavor": "Chocolatey and nutty",
+    "image": "images/excelsa.jpg"
+  },
+  {
+    "name": "Coffee Variety 231",
+    "origin": "Yemen",
+    "altitude": "800\u20131200m",
+    "flavor": "Fruity and floral",
+    "image": "images/arabica.jpg"
+  },
+  {
+    "name": "Coffee Variety 232",
+    "origin": "Ethiopia",
+    "altitude": "1200\u20131600m",
+    "flavor": "Fruity and floral",
+    "image": "images/liberica.jpg"
+  },
+  {
+    "name": "Coffee Variety 233",
+    "origin": "Brazil",
+    "altitude": "2000\u20132400m",
+    "flavor": "Spicy and rich",
+    "image": "images/arabica.jpg"
+  },
+  {
+    "name": "Coffee Variety 234",
+    "origin": "Ethiopia",
+    "altitude": "2000\u20132400m",
+    "flavor": "Wine-like acidity",
+    "image": "images/liberica.jpg"
+  },
+  {
+    "name": "Coffee Variety 235",
+    "origin": "Mexico",
+    "altitude": "1200\u20131600m",
+    "flavor": "Earthy and bold",
+    "image": "images/arabica.jpg"
+  },
+  {
+    "name": "Coffee Variety 236",
+    "origin": "Colombia",
+    "altitude": "1600\u20132000m",
+    "flavor": "Smooth and balanced",
+    "image": "images/arabica.jpg"
+  },
+  {
+    "name": "Coffee Variety 237",
+    "origin": "Colombia",
+    "altitude": "2000\u20132400m",
+    "flavor": "Fruity and floral",
+    "image": "images/arabica.jpg"
+  },
+  {
+    "name": "Coffee Variety 238",
+    "origin": "Yemen",
+    "altitude": "800\u20131200m",
+    "flavor": "Earthy and bold",
+    "image": "images/liberica.jpg"
+  },
+  {
+    "name": "Coffee Variety 239",
+    "origin": "Costa Rica",
+    "altitude": "800\u20131200m",
+    "flavor": "Bright and citrusy",
+    "image": "images/liberica.jpg"
+  },
+  {
+    "name": "Coffee Variety 240",
+    "origin": "Brazil",
+    "altitude": "1600\u20132000m",
+    "flavor": "Wine-like acidity",
+    "image": "images/robusta.jpg"
+  },
+  {
+    "name": "Coffee Variety 241",
+    "origin": "Ethiopia",
+    "altitude": "2000\u20132400m",
+    "flavor": "Earthy and bold",
+    "image": "images/robusta.jpg"
+  },
+  {
+    "name": "Coffee Variety 242",
+    "origin": "Vietnam",
+    "altitude": "800\u20131200m",
+    "flavor": "Chocolatey and nutty",
+    "image": "images/robusta.jpg"
+  },
+  {
+    "name": "Coffee Variety 243",
+    "origin": "Mexico",
+    "altitude": "1600\u20132000m",
+    "flavor": "Earthy and bold",
+    "image": "images/liberica.jpg"
+  },
+  {
+    "name": "Coffee Variety 244",
+    "origin": "Costa Rica",
+    "altitude": "1600\u20132000m",
+    "flavor": "Fruity and floral",
+    "image": "images/liberica.jpg"
+  },
+  {
+    "name": "Coffee Variety 245",
+    "origin": "Kenya",
+    "altitude": "800\u20131200m",
+    "flavor": "Fruity and floral",
+    "image": "images/liberica.jpg"
+  },
+  {
+    "name": "Coffee Variety 246",
+    "origin": "Costa Rica",
+    "altitude": "1600\u20132000m",
+    "flavor": "Sweet with caramel notes",
+    "image": "images/liberica.jpg"
+  },
+  {
+    "name": "Coffee Variety 247",
+    "origin": "Kenya",
+    "altitude": "1600\u20132000m",
+    "flavor": "Smooth and balanced",
+    "image": "images/excelsa.jpg"
+  },
+  {
+    "name": "Coffee Variety 248",
+    "origin": "Yemen",
+    "altitude": "1200\u20131600m",
+    "flavor": "Fruity and floral",
+    "image": "images/arabica.jpg"
+  },
+  {
+    "name": "Coffee Variety 249",
+    "origin": "Mexico",
+    "altitude": "2000\u20132400m",
+    "flavor": "Earthy and bold",
+    "image": "images/robusta.jpg"
+  },
+  {
+    "name": "Coffee Variety 250",
+    "origin": "Ethiopia",
+    "altitude": "800\u20131200m",
+    "flavor": "Smooth and balanced",
+    "image": "images/arabica.jpg"
+  },
+  {
+    "name": "Coffee Variety 251",
+    "origin": "Yemen",
+    "altitude": "2000\u20132400m",
+    "flavor": "Sweet with caramel notes",
+    "image": "images/arabica.jpg"
+  },
+  {
+    "name": "Coffee Variety 252",
+    "origin": "Brazil",
+    "altitude": "1600\u20132000m",
+    "flavor": "Bright and citrusy",
+    "image": "images/arabica.jpg"
+  },
+  {
+    "name": "Coffee Variety 253",
+    "origin": "Vietnam",
+    "altitude": "2000\u20132400m",
+    "flavor": "Chocolatey and nutty",
+    "image": "images/robusta.jpg"
+  },
+  {
+    "name": "Coffee Variety 254",
+    "origin": "Guatemala",
+    "altitude": "1600\u20132000m",
+    "flavor": "Earthy and bold",
+    "image": "images/arabica.jpg"
+  },
+  {
+    "name": "Coffee Variety 255",
+    "origin": "Costa Rica",
+    "altitude": "2000\u20132400m",
+    "flavor": "Chocolatey and nutty",
+    "image": "images/robusta.jpg"
+  },
+  {
+    "name": "Coffee Variety 256",
+    "origin": "Guatemala",
+    "altitude": "1600\u20132000m",
+    "flavor": "Wine-like acidity",
+    "image": "images/arabica.jpg"
+  },
+  {
+    "name": "Coffee Variety 257",
+    "origin": "Mexico",
+    "altitude": "1600\u20132000m",
+    "flavor": "Spicy and rich",
+    "image": "images/arabica.jpg"
+  },
+  {
+    "name": "Coffee Variety 258",
+    "origin": "Vietnam",
+    "altitude": "1600\u20132000m",
+    "flavor": "Bright and citrusy",
+    "image": "images/liberica.jpg"
+  },
+  {
+    "name": "Coffee Variety 259",
+    "origin": "Mexico",
+    "altitude": "1600\u20132000m",
+    "flavor": "Sweet with caramel notes",
+    "image": "images/excelsa.jpg"
+  },
+  {
+    "name": "Coffee Variety 260",
+    "origin": "Brazil",
+    "altitude": "2000\u20132400m",
+    "flavor": "Chocolatey and nutty",
+    "image": "images/arabica.jpg"
+  },
+  {
+    "name": "Coffee Variety 261",
+    "origin": "Vietnam",
+    "altitude": "2000\u20132400m",
+    "flavor": "Earthy and bold",
+    "image": "images/excelsa.jpg"
+  },
+  {
+    "name": "Coffee Variety 262",
+    "origin": "Colombia",
+    "altitude": "2000\u20132400m",
+    "flavor": "Chocolatey and nutty",
+    "image": "images/liberica.jpg"
+  },
+  {
+    "name": "Coffee Variety 263",
+    "origin": "Colombia",
+    "altitude": "1200\u20131600m",
+    "flavor": "Spicy and rich",
+    "image": "images/arabica.jpg"
+  },
+  {
+    "name": "Coffee Variety 264",
+    "origin": "Brazil",
+    "altitude": "2000\u20132400m",
+    "flavor": "Sweet with caramel notes",
+    "image": "images/excelsa.jpg"
+  },
+  {
+    "name": "Coffee Variety 265",
+    "origin": "Guatemala",
+    "altitude": "1600\u20132000m",
+    "flavor": "Wine-like acidity",
+    "image": "images/liberica.jpg"
+  },
+  {
+    "name": "Coffee Variety 266",
+    "origin": "Colombia",
+    "altitude": "1200\u20131600m",
+    "flavor": "Earthy and bold",
+    "image": "images/excelsa.jpg"
+  },
+  {
+    "name": "Coffee Variety 267",
+    "origin": "Kenya",
+    "altitude": "800\u20131200m",
+    "flavor": "Bright and citrusy",
+    "image": "images/liberica.jpg"
+  },
+  {
+    "name": "Coffee Variety 268",
+    "origin": "Colombia",
+    "altitude": "1200\u20131600m",
+    "flavor": "Wine-like acidity",
+    "image": "images/robusta.jpg"
+  },
+  {
+    "name": "Coffee Variety 269",
+    "origin": "Costa Rica",
+    "altitude": "1200\u20131600m",
+    "flavor": "Chocolatey and nutty",
+    "image": "images/excelsa.jpg"
+  },
+  {
+    "name": "Coffee Variety 270",
+    "origin": "Kenya",
+    "altitude": "800\u20131200m",
+    "flavor": "Chocolatey and nutty",
+    "image": "images/arabica.jpg"
+  },
+  {
+    "name": "Coffee Variety 271",
+    "origin": "Kenya",
+    "altitude": "1200\u20131600m",
+    "flavor": "Earthy and bold",
+    "image": "images/robusta.jpg"
+  },
+  {
+    "name": "Coffee Variety 272",
+    "origin": "Yemen",
+    "altitude": "2000\u20132400m",
+    "flavor": "Spicy and rich",
+    "image": "images/excelsa.jpg"
+  },
+  {
+    "name": "Coffee Variety 273",
+    "origin": "Colombia",
+    "altitude": "1200\u20131600m",
+    "flavor": "Sweet with caramel notes",
+    "image": "images/arabica.jpg"
+  },
+  {
+    "name": "Coffee Variety 274",
+    "origin": "India",
+    "altitude": "800\u20131200m",
+    "flavor": "Chocolatey and nutty",
+    "image": "images/excelsa.jpg"
+  },
+  {
+    "name": "Coffee Variety 275",
+    "origin": "India",
+    "altitude": "2000\u20132400m",
+    "flavor": "Chocolatey and nutty",
+    "image": "images/arabica.jpg"
+  },
+  {
+    "name": "Coffee Variety 276",
+    "origin": "Vietnam",
+    "altitude": "2000\u20132400m",
+    "flavor": "Spicy and rich",
+    "image": "images/arabica.jpg"
+  },
+  {
+    "name": "Coffee Variety 277",
+    "origin": "Kenya",
+    "altitude": "1600\u20132000m",
+    "flavor": "Fruity and floral",
+    "image": "images/robusta.jpg"
+  },
+  {
+    "name": "Coffee Variety 278",
+    "origin": "India",
+    "altitude": "1600\u20132000m",
+    "flavor": "Fruity and floral",
+    "image": "images/liberica.jpg"
+  },
+  {
+    "name": "Coffee Variety 279",
+    "origin": "India",
+    "altitude": "2000\u20132400m",
+    "flavor": "Spicy and rich",
+    "image": "images/excelsa.jpg"
+  },
+  {
+    "name": "Coffee Variety 280",
+    "origin": "Vietnam",
+    "altitude": "1200\u20131600m",
+    "flavor": "Chocolatey and nutty",
+    "image": "images/liberica.jpg"
+  },
+  {
+    "name": "Coffee Variety 281",
+    "origin": "Costa Rica",
+    "altitude": "2000\u20132400m",
+    "flavor": "Sweet with caramel notes",
+    "image": "images/excelsa.jpg"
+  },
+  {
+    "name": "Coffee Variety 282",
+    "origin": "India",
+    "altitude": "1200\u20131600m",
+    "flavor": "Spicy and rich",
+    "image": "images/arabica.jpg"
+  },
+  {
+    "name": "Coffee Variety 283",
+    "origin": "India",
+    "altitude": "2000\u20132400m",
+    "flavor": "Smooth and balanced",
+    "image": "images/liberica.jpg"
+  },
+  {
+    "name": "Coffee Variety 284",
+    "origin": "Colombia",
+    "altitude": "2000\u20132400m",
+    "flavor": "Bright and citrusy",
+    "image": "images/excelsa.jpg"
+  },
+  {
+    "name": "Coffee Variety 285",
+    "origin": "India",
+    "altitude": "800\u20131200m",
+    "flavor": "Chocolatey and nutty",
+    "image": "images/excelsa.jpg"
+  },
+  {
+    "name": "Coffee Variety 286",
+    "origin": "Brazil",
+    "altitude": "1600\u20132000m",
+    "flavor": "Fruity and floral",
+    "image": "images/arabica.jpg"
+  },
+  {
+    "name": "Coffee Variety 287",
+    "origin": "India",
+    "altitude": "2000\u20132400m",
+    "flavor": "Chocolatey and nutty",
+    "image": "images/arabica.jpg"
+  },
+  {
+    "name": "Coffee Variety 288",
+    "origin": "Colombia",
+    "altitude": "1600\u20132000m",
+    "flavor": "Earthy and bold",
+    "image": "images/arabica.jpg"
+  },
+  {
+    "name": "Coffee Variety 289",
+    "origin": "Colombia",
+    "altitude": "1600\u20132000m",
+    "flavor": "Earthy and bold",
+    "image": "images/liberica.jpg"
+  },
+  {
+    "name": "Coffee Variety 290",
+    "origin": "Kenya",
+    "altitude": "1200\u20131600m",
+    "flavor": "Sweet with caramel notes",
+    "image": "images/excelsa.jpg"
+  },
+  {
+    "name": "Coffee Variety 291",
+    "origin": "Mexico",
+    "altitude": "800\u20131200m",
+    "flavor": "Sweet with caramel notes",
+    "image": "images/excelsa.jpg"
+  },
+  {
+    "name": "Coffee Variety 292",
+    "origin": "India",
+    "altitude": "2000\u20132400m",
+    "flavor": "Sweet with caramel notes",
+    "image": "images/liberica.jpg"
+  },
+  {
+    "name": "Coffee Variety 293",
+    "origin": "Guatemala",
+    "altitude": "2000\u20132400m",
+    "flavor": "Wine-like acidity",
+    "image": "images/arabica.jpg"
+  },
+  {
+    "name": "Coffee Variety 294",
+    "origin": "India",
+    "altitude": "2000\u20132400m",
+    "flavor": "Bright and citrusy",
+    "image": "images/arabica.jpg"
+  },
+  {
+    "name": "Coffee Variety 295",
+    "origin": "Colombia",
+    "altitude": "1200\u20131600m",
+    "flavor": "Chocolatey and nutty",
+    "image": "images/excelsa.jpg"
+  },
+  {
+    "name": "Coffee Variety 296",
+    "origin": "Guatemala",
+    "altitude": "2000\u20132400m",
+    "flavor": "Fruity and floral",
+    "image": "images/arabica.jpg"
+  },
+  {
+    "name": "Coffee Variety 297",
+    "origin": "Guatemala",
+    "altitude": "800\u20131200m",
+    "flavor": "Wine-like acidity",
+    "image": "images/liberica.jpg"
+  },
+  {
+    "name": "Coffee Variety 298",
+    "origin": "India",
+    "altitude": "1600\u20132000m",
+    "flavor": "Fruity and floral",
+    "image": "images/liberica.jpg"
+  },
+  {
+    "name": "Coffee Variety 299",
+    "origin": "Ethiopia",
+    "altitude": "1200\u20131600m",
+    "flavor": "Spicy and rich",
+    "image": "images/liberica.jpg"
+  },
+  {
+    "name": "Coffee Variety 300",
+    "origin": "Ethiopia",
+    "altitude": "1600\u20132000m",
+    "flavor": "Wine-like acidity",
+    "image": "images/arabica.jpg"
+  },
+  {
+    "name": "Coffee Variety 301",
+    "origin": "Colombia",
+    "altitude": "1200\u20131600m",
+    "flavor": "Spicy and rich",
+    "image": "images/liberica.jpg"
+  },
+  {
+    "name": "Coffee Variety 302",
+    "origin": "Ethiopia",
+    "altitude": "2000\u20132400m",
+    "flavor": "Bright and citrusy",
+    "image": "images/arabica.jpg"
+  },
+  {
+    "name": "Coffee Variety 303",
+    "origin": "Ethiopia",
+    "altitude": "800\u20131200m",
+    "flavor": "Chocolatey and nutty",
+    "image": "images/excelsa.jpg"
+  },
+  {
+    "name": "Coffee Variety 304",
+    "origin": "Ethiopia",
+    "altitude": "1600\u20132000m",
+    "flavor": "Earthy and bold",
+    "image": "images/excelsa.jpg"
+  },
+  {
+    "name": "Coffee Variety 305",
+    "origin": "Colombia",
+    "altitude": "800\u20131200m",
+    "flavor": "Bright and citrusy",
+    "image": "images/robusta.jpg"
+  },
+  {
+    "name": "Coffee Variety 306",
+    "origin": "Colombia",
+    "altitude": "800\u20131200m",
+    "flavor": "Chocolatey and nutty",
+    "image": "images/arabica.jpg"
+  },
+  {
+    "name": "Coffee Variety 307",
+    "origin": "Colombia",
+    "altitude": "800\u20131200m",
+    "flavor": "Fruity and floral",
+    "image": "images/liberica.jpg"
+  },
+  {
+    "name": "Coffee Variety 308",
+    "origin": "Yemen",
+    "altitude": "800\u20131200m",
+    "flavor": "Sweet with caramel notes",
+    "image": "images/robusta.jpg"
+  },
+  {
+    "name": "Coffee Variety 309",
+    "origin": "Costa Rica",
+    "altitude": "1600\u20132000m",
+    "flavor": "Smooth and balanced",
+    "image": "images/arabica.jpg"
+  },
+  {
+    "name": "Coffee Variety 310",
+    "origin": "Ethiopia",
+    "altitude": "800\u20131200m",
+    "flavor": "Chocolatey and nutty",
+    "image": "images/liberica.jpg"
+  },
+  {
+    "name": "Coffee Variety 311",
+    "origin": "Colombia",
+    "altitude": "800\u20131200m",
+    "flavor": "Earthy and bold",
+    "image": "images/robusta.jpg"
+  },
+  {
+    "name": "Coffee Variety 312",
+    "origin": "Ethiopia",
+    "altitude": "800\u20131200m",
+    "flavor": "Wine-like acidity",
+    "image": "images/arabica.jpg"
+  },
+  {
+    "name": "Coffee Variety 313",
+    "origin": "Colombia",
+    "altitude": "1200\u20131600m",
+    "flavor": "Sweet with caramel notes",
+    "image": "images/arabica.jpg"
+  },
+  {
+    "name": "Coffee Variety 314",
+    "origin": "Ethiopia",
+    "altitude": "800\u20131200m",
+    "flavor": "Sweet with caramel notes",
+    "image": "images/liberica.jpg"
+  },
+  {
+    "name": "Coffee Variety 315",
+    "origin": "Ethiopia",
+    "altitude": "800\u20131200m",
+    "flavor": "Smooth and balanced",
+    "image": "images/excelsa.jpg"
+  },
+  {
+    "name": "Coffee Variety 316",
+    "origin": "Vietnam",
+    "altitude": "1200\u20131600m",
+    "flavor": "Sweet with caramel notes",
+    "image": "images/liberica.jpg"
+  },
+  {
+    "name": "Coffee Variety 317",
+    "origin": "Colombia",
+    "altitude": "1600\u20132000m",
+    "flavor": "Bright and citrusy",
+    "image": "images/arabica.jpg"
+  },
+  {
+    "name": "Coffee Variety 318",
+    "origin": "Guatemala",
+    "altitude": "1200\u20131600m",
+    "flavor": "Bright and citrusy",
+    "image": "images/arabica.jpg"
+  },
+  {
+    "name": "Coffee Variety 319",
+    "origin": "India",
+    "altitude": "1600\u20132000m",
+    "flavor": "Spicy and rich",
+    "image": "images/robusta.jpg"
+  },
+  {
+    "name": "Coffee Variety 320",
+    "origin": "Colombia",
+    "altitude": "2000\u20132400m",
+    "flavor": "Spicy and rich",
+    "image": "images/arabica.jpg"
+  },
+  {
+    "name": "Coffee Variety 321",
+    "origin": "Kenya",
+    "altitude": "1600\u20132000m",
+    "flavor": "Chocolatey and nutty",
+    "image": "images/liberica.jpg"
+  },
+  {
+    "name": "Coffee Variety 322",
+    "origin": "Ethiopia",
+    "altitude": "1600\u20132000m",
+    "flavor": "Smooth and balanced",
+    "image": "images/arabica.jpg"
+  },
+  {
+    "name": "Coffee Variety 323",
+    "origin": "Costa Rica",
+    "altitude": "2000\u20132400m",
+    "flavor": "Bright and citrusy",
+    "image": "images/liberica.jpg"
+  },
+  {
+    "name": "Coffee Variety 324",
+    "origin": "Brazil",
+    "altitude": "2000\u20132400m",
+    "flavor": "Fruity and floral",
+    "image": "images/liberica.jpg"
+  },
+  {
+    "name": "Coffee Variety 325",
+    "origin": "Mexico",
+    "altitude": "1600\u20132000m",
+    "flavor": "Spicy and rich",
+    "image": "images/excelsa.jpg"
+  },
+  {
+    "name": "Coffee Variety 326",
+    "origin": "India",
+    "altitude": "2000\u20132400m",
+    "flavor": "Spicy and rich",
+    "image": "images/robusta.jpg"
+  },
+  {
+    "name": "Coffee Variety 327",
+    "origin": "Brazil",
+    "altitude": "1200\u20131600m",
+    "flavor": "Chocolatey and nutty",
+    "image": "images/liberica.jpg"
+  },
+  {
+    "name": "Coffee Variety 328",
+    "origin": "Ethiopia",
+    "altitude": "2000\u20132400m",
+    "flavor": "Smooth and balanced",
+    "image": "images/excelsa.jpg"
+  },
+  {
+    "name": "Coffee Variety 329",
+    "origin": "Kenya",
+    "altitude": "800\u20131200m",
+    "flavor": "Earthy and bold",
+    "image": "images/robusta.jpg"
+  },
+  {
+    "name": "Coffee Variety 330",
+    "origin": "Costa Rica",
+    "altitude": "800\u20131200m",
+    "flavor": "Chocolatey and nutty",
+    "image": "images/robusta.jpg"
+  },
+  {
+    "name": "Coffee Variety 331",
+    "origin": "Guatemala",
+    "altitude": "1600\u20132000m",
+    "flavor": "Spicy and rich",
+    "image": "images/excelsa.jpg"
+  },
+  {
+    "name": "Coffee Variety 332",
+    "origin": "Costa Rica",
+    "altitude": "1200\u20131600m",
+    "flavor": "Fruity and floral",
+    "image": "images/arabica.jpg"
+  },
+  {
+    "name": "Coffee Variety 333",
+    "origin": "Vietnam",
+    "altitude": "1600\u20132000m",
+    "flavor": "Sweet with caramel notes",
+    "image": "images/robusta.jpg"
+  },
+  {
+    "name": "Coffee Variety 334",
+    "origin": "Brazil",
+    "altitude": "2000\u20132400m",
+    "flavor": "Chocolatey and nutty",
+    "image": "images/excelsa.jpg"
+  },
+  {
+    "name": "Coffee Variety 335",
+    "origin": "Mexico",
+    "altitude": "800\u20131200m",
+    "flavor": "Chocolatey and nutty",
+    "image": "images/arabica.jpg"
+  },
+  {
+    "name": "Coffee Variety 336",
+    "origin": "Ethiopia",
+    "altitude": "1200\u20131600m",
+    "flavor": "Bright and citrusy",
+    "image": "images/arabica.jpg"
+  },
+  {
+    "name": "Coffee Variety 337",
+    "origin": "Kenya",
+    "altitude": "800\u20131200m",
+    "flavor": "Chocolatey and nutty",
+    "image": "images/liberica.jpg"
+  },
+  {
+    "name": "Coffee Variety 338",
+    "origin": "Vietnam",
+    "altitude": "1200\u20131600m",
+    "flavor": "Bright and citrusy",
+    "image": "images/arabica.jpg"
+  },
+  {
+    "name": "Coffee Variety 339",
+    "origin": "Mexico",
+    "altitude": "1600\u20132000m",
+    "flavor": "Smooth and balanced",
+    "image": "images/liberica.jpg"
+  },
+  {
+    "name": "Coffee Variety 340",
+    "origin": "Mexico",
+    "altitude": "1200\u20131600m",
+    "flavor": "Sweet with caramel notes",
+    "image": "images/arabica.jpg"
+  },
+  {
+    "name": "Coffee Variety 341",
+    "origin": "Ethiopia",
+    "altitude": "800\u20131200m",
+    "flavor": "Fruity and floral",
+    "image": "images/arabica.jpg"
+  },
+  {
+    "name": "Coffee Variety 342",
+    "origin": "Mexico",
+    "altitude": "2000\u20132400m",
+    "flavor": "Wine-like acidity",
+    "image": "images/excelsa.jpg"
+  },
+  {
+    "name": "Coffee Variety 343",
+    "origin": "Colombia",
+    "altitude": "1600\u20132000m",
+    "flavor": "Smooth and balanced",
+    "image": "images/excelsa.jpg"
+  },
+  {
+    "name": "Coffee Variety 344",
+    "origin": "Mexico",
+    "altitude": "1600\u20132000m",
+    "flavor": "Chocolatey and nutty",
+    "image": "images/excelsa.jpg"
+  },
+  {
+    "name": "Coffee Variety 345",
+    "origin": "Kenya",
+    "altitude": "1200\u20131600m",
+    "flavor": "Smooth and balanced",
+    "image": "images/arabica.jpg"
+  },
+  {
+    "name": "Coffee Variety 346",
+    "origin": "Vietnam",
+    "altitude": "1600\u20132000m",
+    "flavor": "Wine-like acidity",
+    "image": "images/arabica.jpg"
+  },
+  {
+    "name": "Coffee Variety 347",
+    "origin": "Guatemala",
+    "altitude": "800\u20131200m",
+    "flavor": "Earthy and bold",
+    "image": "images/excelsa.jpg"
+  },
+  {
+    "name": "Coffee Variety 348",
+    "origin": "Vietnam",
+    "altitude": "800\u20131200m",
+    "flavor": "Bright and citrusy",
+    "image": "images/robusta.jpg"
+  },
+  {
+    "name": "Coffee Variety 349",
+    "origin": "Vietnam",
+    "altitude": "1200\u20131600m",
+    "flavor": "Sweet with caramel notes",
+    "image": "images/liberica.jpg"
+  },
+  {
+    "name": "Coffee Variety 350",
+    "origin": "Vietnam",
+    "altitude": "800\u20131200m",
+    "flavor": "Smooth and balanced",
+    "image": "images/liberica.jpg"
+  },
+  {
+    "name": "Coffee Variety 351",
+    "origin": "Kenya",
+    "altitude": "1600\u20132000m",
+    "flavor": "Wine-like acidity",
+    "image": "images/liberica.jpg"
+  },
+  {
+    "name": "Coffee Variety 352",
+    "origin": "Kenya",
+    "altitude": "1200\u20131600m",
+    "flavor": "Sweet with caramel notes",
+    "image": "images/robusta.jpg"
+  },
+  {
+    "name": "Coffee Variety 353",
+    "origin": "Guatemala",
+    "altitude": "1600\u20132000m",
+    "flavor": "Wine-like acidity",
+    "image": "images/liberica.jpg"
+  },
+  {
+    "name": "Coffee Variety 354",
+    "origin": "India",
+    "altitude": "1200\u20131600m",
+    "flavor": "Spicy and rich",
+    "image": "images/liberica.jpg"
+  },
+  {
+    "name": "Coffee Variety 355",
+    "origin": "Mexico",
+    "altitude": "1600\u20132000m",
+    "flavor": "Bright and citrusy",
+    "image": "images/liberica.jpg"
+  },
+  {
+    "name": "Coffee Variety 356",
+    "origin": "Ethiopia",
+    "altitude": "1200\u20131600m",
+    "flavor": "Spicy and rich",
+    "image": "images/liberica.jpg"
+  },
+  {
+    "name": "Coffee Variety 357",
+    "origin": "Colombia",
+    "altitude": "1200\u20131600m",
+    "flavor": "Chocolatey and nutty",
+    "image": "images/liberica.jpg"
+  },
+  {
+    "name": "Coffee Variety 358",
+    "origin": "Costa Rica",
+    "altitude": "800\u20131200m",
+    "flavor": "Smooth and balanced",
+    "image": "images/liberica.jpg"
+  },
+  {
+    "name": "Coffee Variety 359",
+    "origin": "Colombia",
+    "altitude": "800\u20131200m",
+    "flavor": "Earthy and bold",
+    "image": "images/arabica.jpg"
+  },
+  {
+    "name": "Coffee Variety 360",
+    "origin": "Ethiopia",
+    "altitude": "1200\u20131600m",
+    "flavor": "Chocolatey and nutty",
+    "image": "images/robusta.jpg"
+  },
+  {
+    "name": "Coffee Variety 361",
+    "origin": "India",
+    "altitude": "2000\u20132400m",
+    "flavor": "Wine-like acidity",
+    "image": "images/robusta.jpg"
+  },
+  {
+    "name": "Coffee Variety 362",
+    "origin": "Brazil",
+    "altitude": "1600\u20132000m",
+    "flavor": "Chocolatey and nutty",
+    "image": "images/arabica.jpg"
+  },
+  {
+    "name": "Coffee Variety 363",
+    "origin": "Costa Rica",
+    "altitude": "1600\u20132000m",
+    "flavor": "Chocolatey and nutty",
+    "image": "images/arabica.jpg"
+  },
+  {
+    "name": "Coffee Variety 364",
+    "origin": "Kenya",
+    "altitude": "1600\u20132000m",
+    "flavor": "Smooth and balanced",
+    "image": "images/arabica.jpg"
+  },
+  {
+    "name": "Coffee Variety 365",
+    "origin": "Colombia",
+    "altitude": "1600\u20132000m",
+    "flavor": "Spicy and rich",
+    "image": "images/arabica.jpg"
+  },
+  {
+    "name": "Coffee Variety 366",
+    "origin": "Brazil",
+    "altitude": "2000\u20132400m",
+    "flavor": "Smooth and balanced",
+    "image": "images/excelsa.jpg"
+  },
+  {
+    "name": "Coffee Variety 367",
+    "origin": "Vietnam",
+    "altitude": "2000\u20132400m",
+    "flavor": "Smooth and balanced",
+    "image": "images/arabica.jpg"
+  },
+  {
+    "name": "Coffee Variety 368",
+    "origin": "Ethiopia",
+    "altitude": "1600\u20132000m",
+    "flavor": "Fruity and floral",
+    "image": "images/robusta.jpg"
+  },
+  {
+    "name": "Coffee Variety 369",
+    "origin": "Mexico",
+    "altitude": "2000\u20132400m",
+    "flavor": "Earthy and bold",
+    "image": "images/liberica.jpg"
+  },
+  {
+    "name": "Coffee Variety 370",
+    "origin": "Brazil",
+    "altitude": "2000\u20132400m",
+    "flavor": "Smooth and balanced",
+    "image": "images/robusta.jpg"
+  },
+  {
+    "name": "Coffee Variety 371",
+    "origin": "Brazil",
+    "altitude": "1600\u20132000m",
+    "flavor": "Wine-like acidity",
+    "image": "images/arabica.jpg"
+  },
+  {
+    "name": "Coffee Variety 372",
+    "origin": "India",
+    "altitude": "2000\u20132400m",
+    "flavor": "Wine-like acidity",
+    "image": "images/arabica.jpg"
+  },
+  {
+    "name": "Coffee Variety 373",
+    "origin": "Ethiopia",
+    "altitude": "1600\u20132000m",
+    "flavor": "Earthy and bold",
+    "image": "images/robusta.jpg"
+  },
+  {
+    "name": "Coffee Variety 374",
+    "origin": "Vietnam",
+    "altitude": "1200\u20131600m",
+    "flavor": "Chocolatey and nutty",
+    "image": "images/robusta.jpg"
+  },
+  {
+    "name": "Coffee Variety 375",
+    "origin": "Vietnam",
+    "altitude": "2000\u20132400m",
+    "flavor": "Earthy and bold",
+    "image": "images/arabica.jpg"
+  },
+  {
+    "name": "Coffee Variety 376",
+    "origin": "Kenya",
+    "altitude": "2000\u20132400m",
+    "flavor": "Bright and citrusy",
+    "image": "images/arabica.jpg"
+  },
+  {
+    "name": "Coffee Variety 377",
+    "origin": "Kenya",
+    "altitude": "1600\u20132000m",
+    "flavor": "Bright and citrusy",
+    "image": "images/liberica.jpg"
+  },
+  {
+    "name": "Coffee Variety 378",
+    "origin": "Mexico",
+    "altitude": "800\u20131200m",
+    "flavor": "Smooth and balanced",
+    "image": "images/arabica.jpg"
+  },
+  {
+    "name": "Coffee Variety 379",
+    "origin": "Guatemala",
+    "altitude": "1200\u20131600m",
+    "flavor": "Wine-like acidity",
+    "image": "images/robusta.jpg"
+  },
+  {
+    "name": "Coffee Variety 380",
+    "origin": "Colombia",
+    "altitude": "1600\u20132000m",
+    "flavor": "Bright and citrusy",
+    "image": "images/liberica.jpg"
+  },
+  {
+    "name": "Coffee Variety 381",
+    "origin": "Colombia",
+    "altitude": "800\u20131200m",
+    "flavor": "Fruity and floral",
+    "image": "images/excelsa.jpg"
+  },
+  {
+    "name": "Coffee Variety 382",
+    "origin": "Costa Rica",
+    "altitude": "1600\u20132000m",
+    "flavor": "Bright and citrusy",
+    "image": "images/liberica.jpg"
+  },
+  {
+    "name": "Coffee Variety 383",
+    "origin": "Costa Rica",
+    "altitude": "800\u20131200m",
+    "flavor": "Bright and citrusy",
+    "image": "images/liberica.jpg"
+  },
+  {
+    "name": "Coffee Variety 384",
+    "origin": "Costa Rica",
+    "altitude": "1600\u20132000m",
+    "flavor": "Sweet with caramel notes",
+    "image": "images/robusta.jpg"
+  },
+  {
+    "name": "Coffee Variety 385",
+    "origin": "Colombia",
+    "altitude": "1200\u20131600m",
+    "flavor": "Wine-like acidity",
+    "image": "images/arabica.jpg"
+  },
+  {
+    "name": "Coffee Variety 386",
+    "origin": "Kenya",
+    "altitude": "800\u20131200m",
+    "flavor": "Chocolatey and nutty",
+    "image": "images/robusta.jpg"
+  },
+  {
+    "name": "Coffee Variety 387",
+    "origin": "Yemen",
+    "altitude": "1600\u20132000m",
+    "flavor": "Spicy and rich",
+    "image": "images/liberica.jpg"
+  },
+  {
+    "name": "Coffee Variety 388",
+    "origin": "Vietnam",
+    "altitude": "1200\u20131600m",
+    "flavor": "Earthy and bold",
+    "image": "images/liberica.jpg"
+  },
+  {
+    "name": "Coffee Variety 389",
+    "origin": "India",
+    "altitude": "1600\u20132000m",
+    "flavor": "Earthy and bold",
+    "image": "images/liberica.jpg"
+  },
+  {
+    "name": "Coffee Variety 390",
+    "origin": "Yemen",
+    "altitude": "2000\u20132400m",
+    "flavor": "Bright and citrusy",
+    "image": "images/liberica.jpg"
+  },
+  {
+    "name": "Coffee Variety 391",
+    "origin": "Colombia",
+    "altitude": "800\u20131200m",
+    "flavor": "Bright and citrusy",
+    "image": "images/robusta.jpg"
+  },
+  {
+    "name": "Coffee Variety 392",
+    "origin": "Brazil",
+    "altitude": "800\u20131200m",
+    "flavor": "Sweet with caramel notes",
+    "image": "images/arabica.jpg"
+  },
+  {
+    "name": "Coffee Variety 393",
+    "origin": "India",
+    "altitude": "1600\u20132000m",
+    "flavor": "Earthy and bold",
+    "image": "images/robusta.jpg"
+  },
+  {
+    "name": "Coffee Variety 394",
+    "origin": "Colombia",
+    "altitude": "1600\u20132000m",
+    "flavor": "Fruity and floral",
+    "image": "images/excelsa.jpg"
+  },
+  {
+    "name": "Coffee Variety 395",
+    "origin": "Mexico",
+    "altitude": "2000\u20132400m",
+    "flavor": "Smooth and balanced",
+    "image": "images/arabica.jpg"
+  },
+  {
+    "name": "Coffee Variety 396",
+    "origin": "Yemen",
+    "altitude": "1200\u20131600m",
+    "flavor": "Wine-like acidity",
+    "image": "images/arabica.jpg"
+  },
+  {
+    "name": "Coffee Variety 397",
+    "origin": "Colombia",
+    "altitude": "800\u20131200m",
+    "flavor": "Chocolatey and nutty",
+    "image": "images/arabica.jpg"
+  },
+  {
+    "name": "Coffee Variety 398",
+    "origin": "Costa Rica",
+    "altitude": "800\u20131200m",
+    "flavor": "Spicy and rich",
+    "image": "images/arabica.jpg"
+  },
+  {
+    "name": "Coffee Variety 399",
+    "origin": "India",
+    "altitude": "1600\u20132000m",
+    "flavor": "Earthy and bold",
+    "image": "images/excelsa.jpg"
+  },
+  {
+    "name": "Coffee Variety 400",
+    "origin": "Vietnam",
+    "altitude": "1200\u20131600m",
+    "flavor": "Spicy and rich",
+    "image": "images/arabica.jpg"
+  },
+  {
+    "name": "Coffee Variety 401",
+    "origin": "Colombia",
+    "altitude": "2000\u20132400m",
+    "flavor": "Bright and citrusy",
+    "image": "images/robusta.jpg"
+  },
+  {
+    "name": "Coffee Variety 402",
+    "origin": "India",
+    "altitude": "2000\u20132400m",
+    "flavor": "Smooth and balanced",
+    "image": "images/robusta.jpg"
+  },
+  {
+    "name": "Coffee Variety 403",
+    "origin": "Ethiopia",
+    "altitude": "800\u20131200m",
+    "flavor": "Bright and citrusy",
+    "image": "images/liberica.jpg"
+  },
+  {
+    "name": "Coffee Variety 404",
+    "origin": "Vietnam",
+    "altitude": "800\u20131200m",
+    "flavor": "Spicy and rich",
+    "image": "images/arabica.jpg"
+  },
+  {
+    "name": "Coffee Variety 405",
+    "origin": "Colombia",
+    "altitude": "1600\u20132000m",
+    "flavor": "Spicy and rich",
+    "image": "images/arabica.jpg"
+  },
+  {
+    "name": "Coffee Variety 406",
+    "origin": "Colombia",
+    "altitude": "1600\u20132000m",
+    "flavor": "Wine-like acidity",
+    "image": "images/excelsa.jpg"
+  },
+  {
+    "name": "Coffee Variety 407",
+    "origin": "Kenya",
+    "altitude": "1600\u20132000m",
+    "flavor": "Fruity and floral",
+    "image": "images/excelsa.jpg"
+  },
+  {
+    "name": "Coffee Variety 408",
+    "origin": "Colombia",
+    "altitude": "2000\u20132400m",
+    "flavor": "Chocolatey and nutty",
+    "image": "images/excelsa.jpg"
+  },
+  {
+    "name": "Coffee Variety 409",
+    "origin": "Brazil",
+    "altitude": "1200\u20131600m",
+    "flavor": "Chocolatey and nutty",
+    "image": "images/robusta.jpg"
+  },
+  {
+    "name": "Coffee Variety 410",
+    "origin": "India",
+    "altitude": "1600\u20132000m",
+    "flavor": "Bright and citrusy",
+    "image": "images/arabica.jpg"
+  },
+  {
+    "name": "Coffee Variety 411",
+    "origin": "Colombia",
+    "altitude": "1600\u20132000m",
+    "flavor": "Chocolatey and nutty",
+    "image": "images/excelsa.jpg"
+  },
+  {
+    "name": "Coffee Variety 412",
+    "origin": "Ethiopia",
+    "altitude": "1600\u20132000m",
+    "flavor": "Smooth and balanced",
+    "image": "images/arabica.jpg"
+  },
+  {
+    "name": "Coffee Variety 413",
+    "origin": "Mexico",
+    "altitude": "800\u20131200m",
+    "flavor": "Sweet with caramel notes",
+    "image": "images/robusta.jpg"
+  },
+  {
+    "name": "Coffee Variety 414",
+    "origin": "Ethiopia",
+    "altitude": "2000\u20132400m",
+    "flavor": "Sweet with caramel notes",
+    "image": "images/liberica.jpg"
+  },
+  {
+    "name": "Coffee Variety 415",
+    "origin": "Kenya",
+    "altitude": "1200\u20131600m",
+    "flavor": "Wine-like acidity",
+    "image": "images/robusta.jpg"
+  },
+  {
+    "name": "Coffee Variety 416",
+    "origin": "Mexico",
+    "altitude": "2000\u20132400m",
+    "flavor": "Fruity and floral",
+    "image": "images/arabica.jpg"
+  },
+  {
+    "name": "Coffee Variety 417",
+    "origin": "Yemen",
+    "altitude": "2000\u20132400m",
+    "flavor": "Spicy and rich",
+    "image": "images/arabica.jpg"
+  },
+  {
+    "name": "Coffee Variety 418",
+    "origin": "Colombia",
+    "altitude": "1200\u20131600m",
+    "flavor": "Chocolatey and nutty",
+    "image": "images/arabica.jpg"
+  },
+  {
+    "name": "Coffee Variety 419",
+    "origin": "Colombia",
+    "altitude": "800\u20131200m",
+    "flavor": "Smooth and balanced",
+    "image": "images/excelsa.jpg"
+  },
+  {
+    "name": "Coffee Variety 420",
+    "origin": "Kenya",
+    "altitude": "1600\u20132000m",
+    "flavor": "Chocolatey and nutty",
+    "image": "images/arabica.jpg"
+  },
+  {
+    "name": "Coffee Variety 421",
+    "origin": "Yemen",
+    "altitude": "1200\u20131600m",
+    "flavor": "Earthy and bold",
+    "image": "images/robusta.jpg"
+  },
+  {
+    "name": "Coffee Variety 422",
+    "origin": "Vietnam",
+    "altitude": "2000\u20132400m",
+    "flavor": "Wine-like acidity",
+    "image": "images/excelsa.jpg"
+  },
+  {
+    "name": "Coffee Variety 423",
+    "origin": "Kenya",
+    "altitude": "1200\u20131600m",
+    "flavor": "Chocolatey and nutty",
+    "image": "images/excelsa.jpg"
+  },
+  {
+    "name": "Coffee Variety 424",
+    "origin": "Vietnam",
+    "altitude": "800\u20131200m",
+    "flavor": "Sweet with caramel notes",
+    "image": "images/excelsa.jpg"
+  },
+  {
+    "name": "Coffee Variety 425",
+    "origin": "India",
+    "altitude": "1600\u20132000m",
+    "flavor": "Smooth and balanced",
+    "image": "images/robusta.jpg"
+  },
+  {
+    "name": "Coffee Variety 426",
+    "origin": "Ethiopia",
+    "altitude": "1600\u20132000m",
+    "flavor": "Chocolatey and nutty",
+    "image": "images/excelsa.jpg"
+  },
+  {
+    "name": "Coffee Variety 427",
+    "origin": "Guatemala",
+    "altitude": "2000\u20132400m",
+    "flavor": "Wine-like acidity",
+    "image": "images/robusta.jpg"
+  },
+  {
+    "name": "Coffee Variety 428",
+    "origin": "Costa Rica",
+    "altitude": "800\u20131200m",
+    "flavor": "Spicy and rich",
+    "image": "images/excelsa.jpg"
+  },
+  {
+    "name": "Coffee Variety 429",
+    "origin": "Yemen",
+    "altitude": "800\u20131200m",
+    "flavor": "Fruity and floral",
+    "image": "images/robusta.jpg"
+  },
+  {
+    "name": "Coffee Variety 430",
+    "origin": "Vietnam",
+    "altitude": "2000\u20132400m",
+    "flavor": "Earthy and bold",
+    "image": "images/arabica.jpg"
+  },
+  {
+    "name": "Coffee Variety 431",
+    "origin": "Yemen",
+    "altitude": "800\u20131200m",
+    "flavor": "Smooth and balanced",
+    "image": "images/arabica.jpg"
+  },
+  {
+    "name": "Coffee Variety 432",
+    "origin": "Yemen",
+    "altitude": "2000\u20132400m",
+    "flavor": "Earthy and bold",
+    "image": "images/liberica.jpg"
+  },
+  {
+    "name": "Coffee Variety 433",
+    "origin": "Yemen",
+    "altitude": "2000\u20132400m",
+    "flavor": "Wine-like acidity",
+    "image": "images/arabica.jpg"
+  },
+  {
+    "name": "Coffee Variety 434",
+    "origin": "Costa Rica",
+    "altitude": "1200\u20131600m",
+    "flavor": "Wine-like acidity",
+    "image": "images/excelsa.jpg"
+  },
+  {
+    "name": "Coffee Variety 435",
+    "origin": "Colombia",
+    "altitude": "1200\u20131600m",
+    "flavor": "Bright and citrusy",
+    "image": "images/robusta.jpg"
+  },
+  {
+    "name": "Coffee Variety 436",
+    "origin": "Vietnam",
+    "altitude": "1600\u20132000m",
+    "flavor": "Spicy and rich",
+    "image": "images/arabica.jpg"
+  },
+  {
+    "name": "Coffee Variety 437",
+    "origin": "Brazil",
+    "altitude": "1600\u20132000m",
+    "flavor": "Earthy and bold",
+    "image": "images/robusta.jpg"
+  },
+  {
+    "name": "Coffee Variety 438",
+    "origin": "Vietnam",
+    "altitude": "1600\u20132000m",
+    "flavor": "Fruity and floral",
+    "image": "images/liberica.jpg"
+  },
+  {
+    "name": "Coffee Variety 439",
+    "origin": "Yemen",
+    "altitude": "800\u20131200m",
+    "flavor": "Sweet with caramel notes",
+    "image": "images/excelsa.jpg"
+  },
+  {
+    "name": "Coffee Variety 440",
+    "origin": "Yemen",
+    "altitude": "2000\u20132400m",
+    "flavor": "Chocolatey and nutty",
+    "image": "images/arabica.jpg"
+  },
+  {
+    "name": "Coffee Variety 441",
+    "origin": "Ethiopia",
+    "altitude": "800\u20131200m",
+    "flavor": "Fruity and floral",
+    "image": "images/robusta.jpg"
+  },
+  {
+    "name": "Coffee Variety 442",
+    "origin": "India",
+    "altitude": "800\u20131200m",
+    "flavor": "Fruity and floral",
+    "image": "images/excelsa.jpg"
+  },
+  {
+    "name": "Coffee Variety 443",
+    "origin": "Colombia",
+    "altitude": "1600\u20132000m",
+    "flavor": "Fruity and floral",
+    "image": "images/arabica.jpg"
+  },
+  {
+    "name": "Coffee Variety 444",
+    "origin": "Costa Rica",
+    "altitude": "1200\u20131600m",
+    "flavor": "Fruity and floral",
+    "image": "images/arabica.jpg"
+  },
+  {
+    "name": "Coffee Variety 445",
+    "origin": "Brazil",
+    "altitude": "1600\u20132000m",
+    "flavor": "Chocolatey and nutty",
+    "image": "images/robusta.jpg"
+  },
+  {
+    "name": "Coffee Variety 446",
+    "origin": "Kenya",
+    "altitude": "2000\u20132400m",
+    "flavor": "Smooth and balanced",
+    "image": "images/arabica.jpg"
+  },
+  {
+    "name": "Coffee Variety 447",
+    "origin": "Ethiopia",
+    "altitude": "1200\u20131600m",
+    "flavor": "Earthy and bold",
+    "image": "images/excelsa.jpg"
+  },
+  {
+    "name": "Coffee Variety 448",
+    "origin": "India",
+    "altitude": "2000\u20132400m",
+    "flavor": "Bright and citrusy",
+    "image": "images/liberica.jpg"
+  },
+  {
+    "name": "Coffee Variety 449",
+    "origin": "Ethiopia",
+    "altitude": "1600\u20132000m",
+    "flavor": "Bright and citrusy",
+    "image": "images/excelsa.jpg"
+  },
+  {
+    "name": "Coffee Variety 450",
+    "origin": "Costa Rica",
+    "altitude": "800\u20131200m",
+    "flavor": "Chocolatey and nutty",
+    "image": "images/robusta.jpg"
+  },
+  {
+    "name": "Coffee Variety 451",
+    "origin": "Yemen",
+    "altitude": "2000\u20132400m",
+    "flavor": "Wine-like acidity",
+    "image": "images/excelsa.jpg"
+  },
+  {
+    "name": "Coffee Variety 452",
+    "origin": "Ethiopia",
+    "altitude": "800\u20131200m",
+    "flavor": "Wine-like acidity",
+    "image": "images/liberica.jpg"
+  },
+  {
+    "name": "Coffee Variety 453",
+    "origin": "Mexico",
+    "altitude": "2000\u20132400m",
+    "flavor": "Bright and citrusy",
+    "image": "images/liberica.jpg"
+  },
+  {
+    "name": "Coffee Variety 454",
+    "origin": "Vietnam",
+    "altitude": "1200\u20131600m",
+    "flavor": "Sweet with caramel notes",
+    "image": "images/excelsa.jpg"
+  },
+  {
+    "name": "Coffee Variety 455",
+    "origin": "Kenya",
+    "altitude": "1600\u20132000m",
+    "flavor": "Earthy and bold",
+    "image": "images/excelsa.jpg"
+  },
+  {
+    "name": "Coffee Variety 456",
+    "origin": "Ethiopia",
+    "altitude": "1600\u20132000m",
+    "flavor": "Fruity and floral",
+    "image": "images/robusta.jpg"
+  },
+  {
+    "name": "Coffee Variety 457",
+    "origin": "Brazil",
+    "altitude": "2000\u20132400m",
+    "flavor": "Bright and citrusy",
+    "image": "images/liberica.jpg"
+  },
+  {
+    "name": "Coffee Variety 458",
+    "origin": "Colombia",
+    "altitude": "1600\u20132000m",
+    "flavor": "Bright and citrusy",
+    "image": "images/liberica.jpg"
+  },
+  {
+    "name": "Coffee Variety 459",
+    "origin": "Vietnam",
+    "altitude": "1600\u20132000m",
+    "flavor": "Spicy and rich",
+    "image": "images/arabica.jpg"
+  },
+  {
+    "name": "Coffee Variety 460",
+    "origin": "Brazil",
+    "altitude": "1600\u20132000m",
+    "flavor": "Spicy and rich",
+    "image": "images/liberica.jpg"
+  },
+  {
+    "name": "Coffee Variety 461",
+    "origin": "Kenya",
+    "altitude": "2000\u20132400m",
+    "flavor": "Chocolatey and nutty",
+    "image": "images/robusta.jpg"
+  },
+  {
+    "name": "Coffee Variety 462",
+    "origin": "Kenya",
+    "altitude": "1600\u20132000m",
+    "flavor": "Spicy and rich",
+    "image": "images/liberica.jpg"
+  },
+  {
+    "name": "Coffee Variety 463",
+    "origin": "Mexico",
+    "altitude": "1600\u20132000m",
+    "flavor": "Earthy and bold",
+    "image": "images/arabica.jpg"
+  },
+  {
+    "name": "Coffee Variety 464",
+    "origin": "Yemen",
+    "altitude": "2000\u20132400m",
+    "flavor": "Earthy and bold",
+    "image": "images/excelsa.jpg"
+  },
+  {
+    "name": "Coffee Variety 465",
+    "origin": "Yemen",
+    "altitude": "1600\u20132000m",
+    "flavor": "Bright and citrusy",
+    "image": "images/robusta.jpg"
+  },
+  {
+    "name": "Coffee Variety 466",
+    "origin": "Ethiopia",
+    "altitude": "2000\u20132400m",
+    "flavor": "Fruity and floral",
+    "image": "images/excelsa.jpg"
+  },
+  {
+    "name": "Coffee Variety 467",
+    "origin": "Colombia",
+    "altitude": "1600\u20132000m",
+    "flavor": "Spicy and rich",
+    "image": "images/excelsa.jpg"
+  },
+  {
+    "name": "Coffee Variety 468",
+    "origin": "Costa Rica",
+    "altitude": "1200\u20131600m",
+    "flavor": "Earthy and bold",
+    "image": "images/robusta.jpg"
+  },
+  {
+    "name": "Coffee Variety 469",
+    "origin": "Vietnam",
+    "altitude": "800\u20131200m",
+    "flavor": "Sweet with caramel notes",
+    "image": "images/excelsa.jpg"
+  },
+  {
+    "name": "Coffee Variety 470",
+    "origin": "Vietnam",
+    "altitude": "1200\u20131600m",
+    "flavor": "Spicy and rich",
+    "image": "images/robusta.jpg"
+  },
+  {
+    "name": "Coffee Variety 471",
+    "origin": "Vietnam",
+    "altitude": "800\u20131200m",
+    "flavor": "Sweet with caramel notes",
+    "image": "images/liberica.jpg"
+  },
+  {
+    "name": "Coffee Variety 472",
+    "origin": "Colombia",
+    "altitude": "1200\u20131600m",
+    "flavor": "Chocolatey and nutty",
+    "image": "images/arabica.jpg"
+  },
+  {
+    "name": "Coffee Variety 473",
+    "origin": "Brazil",
+    "altitude": "1200\u20131600m",
+    "flavor": "Spicy and rich",
+    "image": "images/liberica.jpg"
+  },
+  {
+    "name": "Coffee Variety 474",
+    "origin": "Kenya",
+    "altitude": "800\u20131200m",
+    "flavor": "Sweet with caramel notes",
+    "image": "images/robusta.jpg"
+  },
+  {
+    "name": "Coffee Variety 475",
+    "origin": "Kenya",
+    "altitude": "1200\u20131600m",
+    "flavor": "Spicy and rich",
+    "image": "images/excelsa.jpg"
+  },
+  {
+    "name": "Coffee Variety 476",
+    "origin": "Guatemala",
+    "altitude": "1600\u20132000m",
+    "flavor": "Bright and citrusy",
+    "image": "images/arabica.jpg"
+  },
+  {
+    "name": "Coffee Variety 477",
+    "origin": "Yemen",
+    "altitude": "1200\u20131600m",
+    "flavor": "Chocolatey and nutty",
+    "image": "images/arabica.jpg"
+  },
+  {
+    "name": "Coffee Variety 478",
+    "origin": "Vietnam",
+    "altitude": "800\u20131200m",
+    "flavor": "Bright and citrusy",
+    "image": "images/excelsa.jpg"
+  },
+  {
+    "name": "Coffee Variety 479",
+    "origin": "Costa Rica",
+    "altitude": "2000\u20132400m",
+    "flavor": "Earthy and bold",
+    "image": "images/liberica.jpg"
+  },
+  {
+    "name": "Coffee Variety 480",
+    "origin": "Costa Rica",
+    "altitude": "2000\u20132400m",
+    "flavor": "Chocolatey and nutty",
+    "image": "images/excelsa.jpg"
+  },
+  {
+    "name": "Coffee Variety 481",
+    "origin": "Kenya",
+    "altitude": "1200\u20131600m",
+    "flavor": "Bright and citrusy",
+    "image": "images/arabica.jpg"
+  },
+  {
+    "name": "Coffee Variety 482",
+    "origin": "Costa Rica",
+    "altitude": "800\u20131200m",
+    "flavor": "Earthy and bold",
+    "image": "images/robusta.jpg"
+  },
+  {
+    "name": "Coffee Variety 483",
+    "origin": "Mexico",
+    "altitude": "1600\u20132000m",
+    "flavor": "Chocolatey and nutty",
+    "image": "images/liberica.jpg"
+  },
+  {
+    "name": "Coffee Variety 484",
+    "origin": "Costa Rica",
+    "altitude": "1600\u20132000m",
+    "flavor": "Smooth and balanced",
+    "image": "images/liberica.jpg"
+  },
+  {
+    "name": "Coffee Variety 485",
+    "origin": "Costa Rica",
+    "altitude": "1600\u20132000m",
+    "flavor": "Sweet with caramel notes",
+    "image": "images/excelsa.jpg"
+  },
+  {
+    "name": "Coffee Variety 486",
+    "origin": "India",
+    "altitude": "1600\u20132000m",
+    "flavor": "Spicy and rich",
+    "image": "images/excelsa.jpg"
+  },
+  {
+    "name": "Coffee Variety 487",
+    "origin": "Yemen",
+    "altitude": "800\u20131200m",
+    "flavor": "Chocolatey and nutty",
+    "image": "images/arabica.jpg"
+  },
+  {
+    "name": "Coffee Variety 488",
+    "origin": "India",
+    "altitude": "1600\u20132000m",
+    "flavor": "Smooth and balanced",
+    "image": "images/robusta.jpg"
+  },
+  {
+    "name": "Coffee Variety 489",
+    "origin": "Yemen",
+    "altitude": "800\u20131200m",
+    "flavor": "Sweet with caramel notes",
+    "image": "images/arabica.jpg"
+  },
+  {
+    "name": "Coffee Variety 490",
+    "origin": "Ethiopia",
+    "altitude": "2000\u20132400m",
+    "flavor": "Chocolatey and nutty",
+    "image": "images/arabica.jpg"
+  },
+  {
+    "name": "Coffee Variety 491",
+    "origin": "Guatemala",
+    "altitude": "1600\u20132000m",
+    "flavor": "Wine-like acidity",
+    "image": "images/robusta.jpg"
+  },
+  {
+    "name": "Coffee Variety 492",
+    "origin": "India",
+    "altitude": "2000\u20132400m",
+    "flavor": "Sweet with caramel notes",
+    "image": "images/robusta.jpg"
+  },
+  {
+    "name": "Coffee Variety 493",
+    "origin": "Kenya",
+    "altitude": "800\u20131200m",
+    "flavor": "Fruity and floral",
+    "image": "images/excelsa.jpg"
+  },
+  {
+    "name": "Coffee Variety 494",
+    "origin": "Colombia",
+    "altitude": "1600\u20132000m",
+    "flavor": "Sweet with caramel notes",
+    "image": "images/liberica.jpg"
+  },
+  {
+    "name": "Coffee Variety 495",
+    "origin": "Colombia",
+    "altitude": "2000\u20132400m",
+    "flavor": "Smooth and balanced",
+    "image": "images/excelsa.jpg"
+  },
+  {
+    "name": "Coffee Variety 496",
+    "origin": "Guatemala",
+    "altitude": "2000\u20132400m",
+    "flavor": "Spicy and rich",
+    "image": "images/liberica.jpg"
+  },
+  {
+    "name": "Coffee Variety 497",
+    "origin": "Kenya",
+    "altitude": "1200\u20131600m",
+    "flavor": "Spicy and rich",
+    "image": "images/arabica.jpg"
+  },
+  {
+    "name": "Coffee Variety 498",
+    "origin": "Mexico",
+    "altitude": "2000\u20132400m",
+    "flavor": "Chocolatey and nutty",
+    "image": "images/arabica.jpg"
+  },
+  {
+    "name": "Coffee Variety 499",
+    "origin": "Guatemala",
+    "altitude": "2000\u20132400m",
+    "flavor": "Sweet with caramel notes",
+    "image": "images/excelsa.jpg"
+  },
+  {
+    "name": "Coffee Variety 500",
+    "origin": "Colombia",
+    "altitude": "800\u20131200m",
+    "flavor": "Chocolatey and nutty",
+    "image": "images/liberica.jpg"
   }
-];
+]
