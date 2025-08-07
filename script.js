@@ -35,5 +35,3 @@ window.onload = async () => {
   renderCoffees(data);
   handleSearch(data);
 };
-
-
