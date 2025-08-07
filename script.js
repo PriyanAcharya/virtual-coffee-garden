@@ -1,5 +1,5 @@
 async function fetchCoffeeData() {
-  const res = await fetch("data/coffee-data.json");
+  const res = await fetch('data/coffee-data.json');
   const data = await res.json();
   return data;
 }
@@ -7,7 +7,7 @@ async function fetchCoffeeData() {
 function createCard(coffee) {
   return `
     <div class="card">
-      <img src="${coffee.image}" alt="${coffee.name}">
+      <img src="${coffee.image}" alt="${coffee.name}" />
       <h3>${coffee.name}</h3>
       <p><strong>Origin:</strong> ${coffee.origin}</p>
       <p><strong>Altitude:</strong> ${coffee.altitude}</p>
@@ -16,25 +16,24 @@ function createCard(coffee) {
   `;
 }
 
-function renderCoffees(coffeeList) {
+function renderCoffees(data) {
   const container = document.getElementById("coffeeContainer");
-  container.innerHTML = coffeeList.map(createCard).join("");
+  container.innerHTML = data.map(createCard).join("");
 }
 
 function handleSearch(data) {
-  const searchInput = document.getElementById("searchBar");
-  searchInput.addEventListener("input", () => {
-    const query = searchInput.value.toLowerCase();
-    const filtered = data.filter(coffee =>
-      coffee.name.toLowerCase().includes(query)
-    );
+  const input = document.getElementById("searchBar");
+  input.addEventListener("input", () => {
+    const query = input.value.toLowerCase();
+    const filtered = data.filter(c => c.name.toLowerCase().includes(query));
     renderCoffees(filtered);
   });
 }
 
 window.onload = async () => {
-  const coffeeData = await fetchCoffeeData();
-  renderCoffees(coffeeData);
-  handleSearch(coffeeData);
+  const data = await fetchCoffeeData();
+  renderCoffees(data);
+  handleSearch(data);
 };
+
 
